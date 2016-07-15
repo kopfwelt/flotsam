@@ -1,0 +1,60 @@
+/**
+ * General button styles
+ */
+
+.Button {
+	border: 1px solid $black;
+	cursor: pointer;
+	display: inline-block;
+	font: inherit;
+	line-height: normal;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	white-space: normal;
+	padding: 0.3em 1rem 0.25em;
+	color: $black;
+}
+
+/* UI states */
+
+.Button:hover,
+.Button:focus {
+	text-decoration: none;
+}
+
+.Button:active {}
+
+.Button:disabled {
+	cursor: default;
+	opacity: 0.75;
+}
+
+/* Modifiers */
+
+.Button--negative {
+	@include negative-text;
+	background-color: $black;
+	color: $white;
+}
+
+.Button--icon {
+	// because <button> can't be flex
+	> span {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+	}
+
+	// the icon
+	i {
+		margin-left: 0.5rem;
+	}
+}
+
+/* Types */
+
+.ButtonClose {
+	content: '×';
+}

@@ -1,0 +1,5 @@
+// Make sure that body is set to position: static; and overflow-y: auto;
+.u-noScroll {
+	position: fixed;
+	overflow-y: scroll;
+}

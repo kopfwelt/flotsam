@@ -1,0 +1,33 @@
+/**
+ * Icons
+ */
+
+
+svg {
+	max-height: 100%;
+}
+
+$icon-size: 20px;
+
+// targets all classes that include "icon-"
+[class^="icon-"],
+[class*=" icon-"] {
+	// give the icons a dimension
+	display: inline-block;
+	// scale the background svg/png to fit
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	// inherit any colors
+	fill: currentColor;
+
+	width: rem(20);
+	height: rem(20);
+
+	// When embedding icons using data-grunticon-embed we
+	// have this svg element.
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}

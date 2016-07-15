@@ -1,0 +1,40 @@
+/**
+ * Magnific Popup Custom Styles
+ */
+
+.mfp-bg {
+	background-color: $overlay-bg;
+
+	// Fade the background color through opacity.
+	transition: opacity 200ms;
+	opacity: 0;
+	&.mfp-ready {
+		opacity: 0.8;
+	}
+}
+.mfp-close {
+	cursor: pointer;
+}
+
+// Custom style for Contact msg
+
+.mfp-Contact {
+	background-color: $white;
+	max-width: 90%;
+	padding: rem(25) rem(25) rem(25) rem(25);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	@media (min-width: $layout-m) {
+		max-width: 70%;
+		padding: rem(35) rem(50) rem(35) rem(50);
+	}
+	.mfp-close {
+		background-color: $black;
+		color: $white;
+		opacity: 1;
+		display: inline-block;
+		min-width: rem(80);
+		position: relative !important;
+	}
+}

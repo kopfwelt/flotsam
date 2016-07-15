@@ -1,0 +1,44 @@
+/**
+ * Global styles (avoid anything but element selectors here)
+ */
+
+:root {
+	@include type-global;
+}
+
+
+html {
+	color: $text-color;
+
+	// Enable kerning and ligatures in all browsers.
+	// - http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+	// - https://github.com/kennethormandy/normalize-opentype.css
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern" 1;
+	font-kerning: normal;
+
+	@media (min-width: $layout-l) {
+		font-size: $global-font-size + 2;
+	}
+}
+
+// Typography tags
+h1 {
+	@include type-1;
+}
+
+h2 {
+	@include type-2;
+}
+
+h3 {
+	@include type-3;
+}
+
+h4 {
+	@include type-4;
+}
+
+p {
+	@include type-p;
+}

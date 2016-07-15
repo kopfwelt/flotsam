@@ -1,0 +1,98 @@
+.NavBurger {
+	position: absolute;
+	width: rem(28);
+	height: 100%;
+	max-height: rem(80);
+	min-height: 2em;
+	right: rem(5);
+	top: 0;
+	margin: 0 auto;
+	padding-right: rem(30);
+	padding-left: rem(30);
+
+	text-decoration: none;
+	cursor: pointer;
+	z-index: 21;
+	@media (min-width: 1200px) {
+		padding-right: rem(40);
+		padding-left: rem(40);
+	}
+
+	color: $black;
+	&:focus {
+		outline: none;
+	}
+}
+.NavBurger-label {
+	position: absolute;
+	top: rem(12);
+	right: rem(55);
+	@include type-nav;
+	color: $black;
+
+	@media (min-width: $layout-sm) {
+		top: rem(14);
+	}
+	@media (min-width: 1200px) {
+		right: rem(70);
+	}
+}
+
+.Burger {
+	position: absolute;
+	width: rem(23);
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: rem(12);
+	margin-top: rem(13);
+	border-top: 2px solid $black;
+	transition: .4s $easing;
+	backface-visibility: hidden;
+
+	@media (min-width: $layout-sm) {
+		width: rem(28);
+		// margin-top: rem(27);
+	}
+}
+.Burger--top {
+	top: 0;
+}
+.Burger--middle {
+	top: rem(10);
+}
+.Burger--bottom {
+	top: rem(20);
+}
+
+.NavBurger-label--close {
+	display: none;
+}
+
+// Active State
+.NavBurger.is-active {
+	transform: inherit;
+	height: 3em;
+
+	.Burger {
+		border-color: $black;
+		padding: 0;
+	}
+	.NavBurger-label {
+		display: none;
+	}
+	.NavBurger-label--close {
+		display: block;
+	}
+}
+.NavBurger.is-active .Burger--top {
+	top: rem(10);
+	transform: rotateZ(45deg);
+}
+.NavBurger.is-active .Burger--middle {
+	display: none;
+}
+.NavBurger.is-active .Burger--bottom {
+	top: rem(10);
+	transform: rotateZ(-45deg);
+}

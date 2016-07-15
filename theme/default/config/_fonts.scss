@@ -1,0 +1,17 @@
+$caslon: "Adobe Caslon W01", serif !default;
+$effra: "Effra W01", sans-serif !default;
+
+%font-caslon-regular {
+	font-family: $caslon;
+	font-weight: 400;
+}
+
+%font-caslon-semibold {
+	font-family: $caslon;
+	font-weight: 600;
+}
+
+%font-effra-medium {
+	font-family: $effra;
+	font-weight: 500;
+}

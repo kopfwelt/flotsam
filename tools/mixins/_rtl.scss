@@ -1,0 +1,17 @@
+/**
+ * Left to right
+ */
+@mixin ltr {
+	[dir="ltr"] & {
+		@content;
+	}
+}
+
+/**
+ * Right to left
+ */
+@mixin rtl {
+	[dir="rtl"] & {
+		@content;
+	}
+}

@@ -1,0 +1,52 @@
+/**
+ * Forms
+ */
+
+label {
+	// Put labels above inputs
+	display: block;
+}
+
+// Common styles for text inputs and buttons
+#{$all-text-inputs} {
+	width: 100%;
+	max-width: 100%;
+	padding: 0.3em 0.5em 0.25em;
+	border: 1px solid hsl(0, 0%, 80%);
+}
+
+// Focus and hover styles for text inputs
+#{$all-text-inputs-focus},
+#{$all-text-inputs-hover} {
+	// border: 1px solid green;
+}
+
+// Active styles for text inputs
+#{$all-text-inputs-active} {
+	// border: 1px solid blue;
+}
+
+// Placeholder styles
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder,
+input::-webkit-input-placeholder {
+	// color: orange;
+}
+
+/* Validation */
+
+input,
+textarea {
+	width: 100%;
+	&.error,
+	&.parsley-error {
+		box-shadow: 0 0 2px 2px $error-validation;
+		border-color: $error-validation;
+	}
+}
+
+// Hide the automatically generated error list
+ul.parsley-error-list {
+	display: none !important;
+}

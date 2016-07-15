@@ -1,0 +1,25 @@
+/**
+ * Predefined navigation mixins
+ */
+
+@mixin navHorizontal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	* > {
+		display: inline-block;
+	}
+}
+
+@mixin navVertical {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
+
+	* > {
+		display: block;
+	}
+}
+
+// @mixin navItem? - thought the styles were too specific (Kimberly)

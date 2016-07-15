@@ -1,0 +1,13 @@
+/**
+ * Layout definitions
+ */
+
+$grid-columns: 12 !default;
+$grid-gutters: (1/4) !default;
+
+/* Susy */
+$susy: (
+	global-box-sizing: border-box,
+	columns: $grid-columns,
+	gutters: $grid-gutters
+);
