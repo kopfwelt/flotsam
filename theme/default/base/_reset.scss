@@ -27,3 +27,14 @@ figure {
 	margin-top: 0;
 	margin-bottom: rem($space);
 }
+
+// I put this back here because there its not a reponsive code even if its a responsive solution
+// Responsive media
+iframe,
+img,
+canvas,
+video,
+audio,
+embed {
+	max-width: 100%;
+}

@@ -21,7 +21,7 @@ html {
 		font-size: $global-font-size + 2;
 	}
 }
-
+// Im not sure of the logic here, where are the type-1 mixin ?
 // Typography tags
 h1 {
 	@include type-1;
