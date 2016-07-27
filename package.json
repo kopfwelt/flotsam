@@ -1,0 +1,24 @@
+{
+  "name": "kern",
+  "version": "0.0.1",
+  "description": "A basic framework using SUIT CSS naming convention",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sinnwell@github.com/kopfwelt/kern.git"
+  },
+  "keywords": [
+    "CSS",
+    "Framework",
+    "SUIT"
+  ],
+  "author": "Steve Sinnwell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kopfwelt/kern/issues"
+  },
+  "homepage": "https://github.com/kopfwelt/kern#readme"
+}
