@@ -3,54 +3,8 @@
  * Breakpoints
  */
 /**
- * Color definitions
- */
-/**
- * Good looking animations
- */
-/**
- * Spacing definitions
- */
-/**
- * Layout definitions
- */
-/* Susy */
-/**
  * Typography
  */
-/**
- * Resets default margins
- */
-body {
-  margin: 0; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-dl,
-ol,
-ul,
-blockquote,
-pre,
-fieldset,
-table,
-address,
-figure {
-  margin-top: 0;
-  margin-bottom: rem(rem(24)); }
-
-iframe,
-img,
-canvas,
-video,
-audio,
-embed {
-  max-width: 100%; }
-
 /**
  * Strips units from a number
  */
@@ -878,3 +832,172 @@ embed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+/**
+ * Color definitions
+ */
+/**
+ * Good looking animations
+ */
+/**
+ * Spacing definitions
+ */
+/**
+ * Layout definitions
+ */
+/* Susy */
+/**
+ * Resets default margins
+ */
+body {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+ol,
+ul,
+blockquote,
+pre,
+fieldset,
+table,
+address,
+figure {
+  margin-top: 0;
+  margin-bottom: 1.6rem; }
+
+iframe,
+img,
+canvas,
+video,
+audio,
+embed {
+  max-width: 100%; }
+
+a,
+a:visited {
+  color: black; }
+
+/**
+ * General button styles
+ */
+.Button {
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  font: inherit;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  white-space: normal;
+  padding: 0.3em 1rem 0.25em;
+  color: black; }
+
+/* UI states */
+.Button:hover,
+.Button:focus {
+  text-decoration: none; }
+
+.Button:disabled {
+  cursor: default;
+  opacity: 0.75; }
+
+/* Modifiers */
+.Button--negative {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white; }
+
+.Button--icon > span {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; }
+
+.Button--icon i {
+  margin-left: 0.5rem; }
+
+/* Types */
+.ButtonClose {
+  content: '×'; }
+
+/**
+ * Forms
+ */
+label {
+  display: block; }
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.3em 0.5em 0.25em;
+  border: 1px solid #cccccc; }
+
+/* Validation */
+input,
+textarea {
+  width: 100%; }
+  input.error, input.parsley-error,
+  textarea.error,
+  textarea.parsley-error {
+    box-shadow: 0 0 2px 2px red;
+    border-color: red; }
+
+ul.parsley-error-list {
+  display: none !important; }
+
+html {
+  background-color: white; }
+
+/**
+ * Icons
+ */
+svg {
+  max-height: 100%; }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: currentColor;
+  width: 1.33333rem;
+  height: 1.33333rem; }
+  [class^="icon-"] svg,
+  [class*=" icon-"] svg {
+    width: 100%;
+    height: 100%; }
+
+img {
+  height: auto;
+  vertical-align: bottom; }
+
+/**
+ * Global styles (avoid anything but element selectors here)
+ */
+html {
+  color: black;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; }
+  @media (min-width: 1280px) {
+    html {
+      font-size: 17px; } }
+
+/**
+ * Navigation
+ */
+/**
+ * Footer
+ */
+/**
+ * Header
+ */
