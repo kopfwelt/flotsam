@@ -25,7 +25,7 @@ table,
 address,
 figure {
 	margin-top: 0;
-	margin-bottom: rem($space);
+	margin-bottom: $spacing-m;
 }
 
 // I put this back here because there its not a reponsive code even if its a responsive solution

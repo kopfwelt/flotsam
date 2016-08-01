@@ -2,9 +2,24 @@
  * Position Mixins
  */
 
-@mixin absoltuteCenter {
+@mixin positionCenter {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.u-positionCenter {
+	@include positionCenter;
+}
+
+.u-posRelative {
+	position: relative;
+}
+
+.u-alignCenter {
+	align-items: center;
+}
+
+.u-justifyCenter {
+	justify-content: center;
 }
