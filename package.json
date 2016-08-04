@@ -2,7 +2,7 @@
   "name": "kern",
   "version": "0.0.1",
   "description": "A basic framework using SUIT CSS naming convention",
-  "main": "index.js",
+  "main": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
