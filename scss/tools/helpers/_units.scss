@@ -2,6 +2,8 @@
  * Strips units from a number
  */
 
+$root-font-size: 15px !default;
+
 @function strip-unit($num) {
 	@return $num / ($num * 0 + 1);
 }
