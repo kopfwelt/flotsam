@@ -20,7 +20,7 @@
 	top: rem(12);
 	right: rem(55);
 	// @include type-nav;
-	color: $black;
+	color: black;
 
 	@media (min-width: $layout-sm) {
 		top: rem(14);
@@ -38,7 +38,7 @@
 	margin: auto;
 	padding: rem(12);
 	margin-top: 0;
-	border-top: 2px solid $black;
+	border-top: 2px solid black;
 	transition: .4s $easing;
 	backface-visibility: hidden;
 
@@ -65,7 +65,7 @@
 	height: 3em;
 
 	.Burger {
-		border-color: $black;
+		border-color: black;
 		padding: 0;
 	}
 	.BurgerWrap-label {
