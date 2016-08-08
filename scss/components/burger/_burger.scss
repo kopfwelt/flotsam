@@ -19,7 +19,7 @@
 	position: absolute;
 	top: rem(12);
 	right: rem(55);
-	@include type-nav;
+	// @include type-nav;
 	color: $black;
 
 	@media (min-width: $layout-sm) {
