@@ -1,0 +1,76 @@
+/**
+ * Bar test
+ */
+
+.Bar {
+	position: relative;
+	display: block;
+}
+
+.Bar--horizontal {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.Nav {
+		display: inline-block;
+		> * {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+.Bar--vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Fallback */
+
+.no-flexbox {
+	.Bar--horizontal {
+		> * {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.Bar--vertical {
+		> * {
+		display: block;
+		vertical-align: middle;
+		}
+	}
+
+	.Bar-item--left {
+		position: absolute;
+		left: 0;
+	}
+	.Bar-item--right {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.Bar-item--center {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: auto;
+	}
+	.Bar-item--middle {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.Bar-item--bottom {
+		position: absolute;
+		bottom: 0;
+	}
+
+}

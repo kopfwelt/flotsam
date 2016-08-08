@@ -1,29 +1,21 @@
-.NavBurger {
-	position: absolute;
-	width: rem(28);
-	height: 100%;
-	max-height: rem(80);
-	min-height: 2em;
-	right: rem(5);
-	top: 0;
-	margin: 0 auto;
-	padding-right: rem(30);
-	padding-left: rem(30);
+.BurgerWrap {
+	position: relative;
+	display: inline-block;
+	width: rem(30);
+	height: rem(28);
+	vertical-align: middle;
 
-	text-decoration: none;
-	cursor: pointer;
-	z-index: 21;
-	@media (min-width: 1200px) {
-		padding-right: rem(40);
-		padding-left: rem(40);
+	i {
+		@include hide-text;
+		width: 100%;
+		height: 100%;
 	}
 
-	color: $black;
 	&:focus {
 		outline: none;
 	}
 }
-.NavBurger-label {
+.BurgerWrap-label {
 	position: absolute;
 	top: rem(12);
 	right: rem(55);
@@ -45,14 +37,13 @@
 	right: 0;
 	margin: auto;
 	padding: rem(12);
-	margin-top: rem(13);
+	margin-top: 0;
 	border-top: 2px solid $black;
 	transition: .4s $easing;
 	backface-visibility: hidden;
 
 	@media (min-width: $layout-sm) {
 		width: rem(28);
-		// margin-top: rem(27);
 	}
 }
 .Burger--top {
@@ -65,34 +56,33 @@
 	top: rem(20);
 }
 
-.NavBurger-label--close {
+.BurgerWrap-label--close {
 	display: none;
 }
 
 // Active State
-.NavBurger.is-active {
-	transform: inherit;
+.BurgerWrap.is-active {
 	height: 3em;
 
 	.Burger {
 		border-color: $black;
 		padding: 0;
 	}
-	.NavBurger-label {
+	.BurgerWrap-label {
 		display: none;
 	}
-	.NavBurger-label--close {
+	.BurgerWrap-label--close {
 		display: block;
 	}
 }
-.NavBurger.is-active .Burger--top {
+.BurgerWrap.is-active .Burger--top {
 	top: rem(10);
 	transform: rotateZ(45deg);
 }
-.NavBurger.is-active .Burger--middle {
+.BurgerWrap.is-active .Burger--middle {
 	display: none;
 }
-.NavBurger.is-active .Burger--bottom {
+.BurgerWrap.is-active .Burger--bottom {
 	top: rem(10);
 	transform: rotateZ(-45deg);
 }
