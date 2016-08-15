@@ -9,15 +9,9 @@
 
 .Bar--horizontal {
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-
-
-	@media (min-width: $layout-sm) {
-		flex-direction: row;
-	}
 
 	.Bar-item {
 		display: flex;
