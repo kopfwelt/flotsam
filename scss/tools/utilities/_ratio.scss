@@ -41,6 +41,9 @@
 .Ratio--3-4 {
 	@include aspect-ratio(3, 4);
 }
+.Ratio--1-2 {
+	@include aspect-ratio(1, 2);
+}
 .Ratio--1-1 {
 	@include aspect-ratio(1, 1);
 }
