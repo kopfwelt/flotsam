@@ -32,6 +32,9 @@
 .Ratio--16-9 {
 	@include aspect-ratio(16, 9);
 }
+.Ratio--9-16 {
+	@include aspect-ratio(9, 16);
+}
 .Ratio--32-9 {
 	@include aspect-ratio(32, 9);
 }
