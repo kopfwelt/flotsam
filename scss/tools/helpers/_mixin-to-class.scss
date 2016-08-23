@@ -1,0 +1,11 @@
+/**
+ * Generate classes from mixins with the same name
+ * mixin type-title1 generates .type-title1
+ */
+@mixin createClassNames($listOfMixins) {
+  @each $className, $mixin in $listOfMixins {
+    .#{$name} {
+      @include $mixin;
+    }
+  }	
+}
