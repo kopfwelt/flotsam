@@ -16,8 +16,8 @@ $space: 30px;
 	display: inline-block;
 	cursor: pointer;
 	border: 0;
-	background-color: $black;
-	color: $white;
+	background-color: black;
+	color: white;
 	padding: 0.3rem 1.5rem 0.3rem;
 	min-width: rem(135);
 	min-height: rem(50);
@@ -33,7 +33,7 @@ $space: 30px;
 }
 
 a.Button {
-	color: $white;
+	color: white;
 	text-decoration: none;
 }
 

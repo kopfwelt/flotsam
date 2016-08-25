@@ -25,7 +25,7 @@ Button styles.
 select,
 label {
 	padding: 1.3em 1.2em 1.35em;
-	color: $black;
+	color: black;
 
     transition: border-color .15s;
 }
@@ -46,7 +46,7 @@ input:-moz-placeholder,
 input::-moz-placeholder,
 input:-ms-input-placeholder,
 input::-webkit-input-placeholder {
-	color: $black;
+	color: black;
 }
 
 label span {
@@ -58,7 +58,7 @@ label span {
 	margin: auto;
 
 	textarea {
-		border: 1px solid $black;
+		border: 1px solid black;
 	}
 
 	.Button {
@@ -74,7 +74,7 @@ label span {
 /* Labels inside Inputs (visually) */
 
 .Form-group {
-	border: 1px solid $black;
+	border: 1px solid black;
 
 	label {
 		padding-right: 0;
@@ -105,7 +105,7 @@ label span {
 			border-radius: 50%;
 			height: rem(30);
 			width: rem(30);
-			border: 2px solid $black;
+			border: 2px solid black;
 
 			visibility: visible;
 			margin: auto;
@@ -121,7 +121,7 @@ label span {
 				left: rem(5);
 				height: rem(20);
 				width: rem(20);
-				background-color: $black;
+				background-color: black;
 				visibility: visible;
 			}
 		}
@@ -155,8 +155,8 @@ label span {
 			content: '';
 			height: rem(30);
 			width: rem(30);
-			border: 2px solid $black;
-			background: $white;
+			border: 2px solid black;
+			background: white;
 			visibility: visible;
 			margin: auto;
 			z-index: 2;
@@ -213,7 +213,7 @@ ul.parsley-error-list {
 	}
 
 	select {
-		border-color: $black;
+		border-color: black;
 		border-radius: 0;
 		outline: none;
 		background-color: transparent;
@@ -259,7 +259,7 @@ ul.parsley-error-list {
 	display: inline-block;
 	width: rem(40);
 	height: 100%;
-	background-color: $black;
+	background-color: black;
 	background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="24.09px" height="24.09px" viewBox="0 0 24.09 24.09" enable-background="new 0 0 24.09 24.09" xml:space="preserve">
 <polygon fill="#FFFFFF" points="24.102,7.162 12.045,19.219 -0.011,7.162 2.3,4.873 12.045,14.609 21.801,4.873 "/>
