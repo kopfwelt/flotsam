@@ -24,8 +24,8 @@ fieldset,
 table,
 address,
 figure {
-	margin-top: 0;
-	margin-bottom: rem($spacing-m);
+	margin-top: 0 !default;
+	margin-bottom: rem($spacing-m) !default;
 }
 
 // Responsive media
@@ -35,5 +35,9 @@ canvas,
 video,
 audio,
 embed {
-	max-width: 100%;
+	max-width: 100% !default;
+}
+
+img {
+	width: 100% !default;
 }
