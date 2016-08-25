@@ -25,10 +25,9 @@ table,
 address,
 figure {
 	margin-top: 0;
-	margin-bottom: $spacing-m;
+	margin-bottom: rem($spacing-m);
 }
 
-// I put this back here because there its not a reponsive code even if its a responsive solution
 // Responsive media
 iframe,
 img,

@@ -31,3 +31,77 @@ $icon-size: 20px;
 		height: 100%;
 	}
 }
+
+//Layout logic
+$space: 30px;
+$icon-spacing-horizontal-small: $space/3;
+$icon-spacing-horizontal: $space/1.5;
+$icon-spacing-vertical-small: 7.5px;
+$icon-spacing-vertical: $space/2;
+
+.Icon {
+	display: flex;
+}
+.Icon i {
+	// don't shrink the icon
+	flex-shrink: 0;
+
+	width: rem(30);
+	height: rem(30);
+	// IE 10 fix
+	background-size: 30px 30px;
+	@media (min-width: $layout-m) {
+		width: rem(40);
+		height: rem(40);
+		// IE 10 fix
+		background-size: 40px 40px;
+	}
+	@media (min-width: $layout-l) {
+		width: rem(50);
+		height: rem(50);
+		// IE 10 fix
+		background-size: 50px 50px;
+	}
+}
+.Icon-text {
+	display: inline-block;
+	align-self: center;
+	margin-left: rem($icon-spacing-horizontal-small);
+	text-align: left;
+	z-index: 1; // fix bug in safari
+	@media (min-width: $layout-m) {
+		margin-left: rem($icon-spacing-horizontal);
+	}
+}
+.Icon--underneath {
+	flex-direction: column;
+	i {
+		margin: auto;
+	}
+}
+.Icon--reverse {
+	justify-content: flex-end;
+}
+.Icon-text--reverse {
+	order: -1;
+	text-align: right;
+	margin-left: 0;
+	margin-right: rem($icon-spacing-horizontal-small);
+	@media (min-width: $layout-m) {
+		margin-left: 0;
+		margin-right: rem($icon-spacing-horizontal);
+	}
+}
+.Icon-text--underneath {
+	text-align: center;
+	margin-top: rem($icon-spacing-vertical-small);
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: $layout-m) {
+		margin-top: rem($icon-spacing-vertical);
+	}
+}
+
+.Icon-text--gray {
+	color: gray;
+}

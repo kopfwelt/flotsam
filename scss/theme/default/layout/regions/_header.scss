@@ -1,3 +1,104 @@
 /**
- * Header
+ * Cybex header
  */
+
+.SiteHeader {
+	@include font-arial-bold;
+
+	.Bar {
+		font-size: rem(14);
+		background-color: $cool-gray;
+		z-index: 20;
+		min-height: rem(50);
+	}
+
+	.Bar--horizontal {
+		.Bar-item:first-of-type {
+			padding-left: $spacing-s;
+			@media (min-width: $layout-ml) {
+				padding-left: $spacing-m;
+			}
+		}
+	}
+
+	.Bar-item,
+	.Bar--horizontal .Nav-item {
+		height: rem(50);
+	}
+
+	.Bar-item--center {
+		display: none;
+		@media (min-width: $layout-sm) {
+			display: block;
+			display: flex;
+		}
+	}
+
+	.Bar-item:last-of-type {
+		padding-right: $spacing-s;
+		.icon-cart-new,
+		.icon-search-btn {
+			height: 27px;
+			width: 27px;
+		}
+		.icon-retailer-available {
+			height: 27px;
+			width: 19px;
+		}
+		@media (min-width: $layout-ml) {
+			padding-right: $spacing-sm;
+		}
+	}
+
+	.Logo {
+		display: flex;
+		margin-bottom: 0;
+		i {
+			width: rem(115);
+			height: rem(30);
+		}
+	}
+
+}
+.SiteHeader--big {
+	.Bar {
+		font-size: rem(18);
+		min-height: rem(50);
+		@media (min-width: $layout-sm) {
+			min-height: rem(78);
+		}
+	}
+
+	.Bar-item,
+	.Bar--horizontal .Nav-item {
+		height: rem(50);
+
+		@media (min-width: $layout-sm) {
+			height: rem(78);
+		}
+	}
+
+	.Bar-item:last-of-type {
+		padding-right: $spacing-s;
+
+		.icon-cart-new,
+		.icon-search-btn {
+			height: 34px;
+			width: 34px;
+		}
+		.icon-retailer-available {
+			height: 34px;
+			width: 24px;
+		}
+		@media (min-width: $layout-ml) {
+			padding-right: $spacing-sm;
+		}
+	}
+
+	.Logo {
+		i {
+			width: rem(130);
+			height: rem(40);
+		}
+	}
+}

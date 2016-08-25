@@ -1,14 +1,11 @@
+
 /**
- * Color definitions
+ * Theme specific variables
+ * Try to avoid to use the color code directly
  */
 
-// General colors
-$primary-color: red !default;
-$background-color: hsl(0, 0%, 100%) !default;
-$text-color: hsl(0, 0%, 0%) !default;
-$overlay-bg: grey !default;
-$error-validation: red !default;
-
-// Colors
-$white: hsl(0, 0%, 100%) !default;
-$black: hsl(0, 0%, 0%) !default;
+$primary-color: 	red !default;
+$background-color: 	white !default;
+$text-color: 		black !default;
+$overlay-bg: 		gray !default;
+$error-validation: 	red !default;

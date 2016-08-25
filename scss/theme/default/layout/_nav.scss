@@ -2,6 +2,26 @@
  * Navigation
  */
 
-.Nav {
-	
+a.Nav-item {
+	&:hover,
+	&.is-active {
+		background-color: hsla(0,0%,100%,.15);
+	}
+}
+.Bar--horizontal {
+	.Bar-item:last-of-type {
+		> * {
+			margin-left: rem(9.5);
+			margin-right: rem(9.5);
+		}
+	}
+	.Nav-item {
+		padding-left: $spacing-s;
+		padding-right: $spacing-s;
+
+		@media (min-width: $layout-ml) {
+			padding-left: $spacing-sm;
+			padding-right: $spacing-sm;
+		}
+	}
 }
