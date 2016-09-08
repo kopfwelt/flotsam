@@ -70,7 +70,6 @@ html {
 @mixin type-label {
 	@include font-arial-regular;
 	font-size: rem(11);
-	text-transform: uppercase;
 }
 
 @mixin type-button {
