@@ -100,7 +100,7 @@
 			@if $direction == left {
 	    text-align: right;
 	  } @else if $direction == right {
-	    text-align: = left;
+	    text-align: left;
 	  } @else {
 	    text-align: $direction;
 	  }
