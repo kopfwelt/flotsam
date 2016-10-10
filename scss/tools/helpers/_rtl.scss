@@ -116,7 +116,7 @@
 			@if $direction == left {
 	    clear: right;
 	  } @else if $direction == right {
-	    clear: = left;
+	    clear: left;
 	  } @else {
 	    clear: $direction;
 	  }
