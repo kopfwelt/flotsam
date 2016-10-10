@@ -20,6 +20,7 @@
 // ------------------------------------------
 // Table of contents
 // ------------------------------------------
+// generic mixin
 // padding
 // margin
 // float
@@ -32,7 +33,6 @@
 //  - color
 //  - generic
 //  - radius
-// ltr / rtl contents
 // ------------------------------------------
 
 // generic mixin for properties with values
@@ -77,7 +77,6 @@
 
 // float
 // ------------------------------------------
-
 @mixin float($direction) {
 	@include ltr { float: $direction; };
 	@include rtl {
@@ -93,7 +92,6 @@
 
 // text align
 // ------------------------------------------
-
 @mixin text-align($direction) {
 	@include ltr { text-align: $direction; };
 	@include rtl {
@@ -109,7 +107,6 @@
 
 // clear
 // ------------------------------------------
-
 @mixin clear($direction) {
 	@include ltr { clear: $direction; };
 	@include rtl {
