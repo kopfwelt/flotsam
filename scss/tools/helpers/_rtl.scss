@@ -15,3 +15,234 @@
 		@content;
 	}
 }
+
+
+// ------------------------------------------
+// Table of contents
+// ------------------------------------------
+// padding
+// margin
+// float
+// text align
+// clear
+// left / right
+// border
+//  - width
+//  - style
+//  - color
+//  - generic
+//  - radius
+// ltr / rtl contents
+// ------------------------------------------
+
+// generic mixin for properties with values
+// (top right bottom left)
+// ------------------------------------------
+@mixin bid-all-directions($property, $top, $right, $bottom, $left) {
+  @include ltr { #{$property}: $top $right $bottom $left; };
+	@include rtl { #{$property}: $top $left $bottom $right; };
+}
+
+// padding
+// ------------------------------------------
+@mixin padding-left($distance) {
+	@include ltr { padding-left: $distance; };
+	@include rtl { padding-right: $distance; };
+}
+
+@mixin padding-right($distance) {
+	@include ltr { padding-right: $distance; };
+	@include rtl { padding-left: $distance; };
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+	@include bid-all-directions(padding, $top, $right, $bottom, $left);
+}
+
+// margin
+// ------------------------------------------
+@mixin margin-left($distance) {
+	@include ltr { margin-left: $distance; };
+	@include rtl { margin-right: $distance; };
+}
+
+@mixin margin-right($distance) {
+	@include ltr { margin-right: $distance; };
+	@include rtl { margin-left: $distance; };
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+	@include bid-all-directions(margin, $top, $right, $bottom, $left);
+}
+
+// float
+// ------------------------------------------
+
+@mixin float($direction) {
+	@include ltr { float: $direction; };
+	@include rtl {
+			@if $direction == left {
+	    float: right;
+	  } @else if $direction == right {
+	    float: = left;
+	  } @else {
+	    float: $direction;
+	  }
+	};
+}
+
+// text align
+// ------------------------------------------
+
+@mixin text-align($direction) {
+	@include ltr { text-align: $direction; };
+	@include rtl {
+			@if $direction == left {
+	    text-align: right;
+	  } @else if $direction == right {
+	    text-align: = left;
+	  } @else {
+	    text-align: $direction;
+	  }
+	};
+}
+
+// clear
+// ------------------------------------------
+
+@mixin clear($direction) {
+	@include ltr { clear: $direction; };
+	@include rtl {
+			@if $direction == left {
+	    clear: right;
+	  } @else if $direction == right {
+	    clear: = left;
+	  } @else {
+	    clear: $direction;
+	  }
+	};
+}
+
+// left / right
+// ------------------------------------------
+@mixin left($distance) {
+	@include ltr { left: $distance; };
+	@include rtl { right: $distance; };
+}
+
+@mixin right($distance) {
+	@include ltr { right: $distance; };
+	@include rtl { left: $distance; };
+}
+
+// border
+// ------------------------------------------
+
+// width
+@mixin border-left-width($width) {
+	@include ltr { border-left: $width; };
+	@include rtl { border-right: $width; };
+}
+
+@mixin border-right-width($width) {
+	@include ltr { border-right: $width; };
+	@include rtl { border-left: $width; };
+}
+
+@mixin border-width($top, $right, $bottom, $left) {
+	@include bid-all-directions(border-width, $top, $right, $bottom, $left);
+}
+
+// style
+@mixin border-left-style($style) {
+	@include ltr { border-left-style: $style; };
+	@include rtl { border-right-style: $style; };
+}
+
+@mixin border-right-style($style) {
+	@include ltr { border-right-style: $style; };
+	@include rtl { border-left-style: $style; };
+}
+
+@mixin border-style($top, $right, $bottom, $left) {
+	@include bid-all-directions(border-style, $top, $right, $bottom, $left);
+}
+
+// color
+@mixin border-left-color($color) {
+	@include ltr { border-left-color: $color; };
+	@include rtl { border-right-color: $color; };
+}
+
+@mixin border-right-color($color) {
+	@include ltr { border-right-color: $color; };
+	@include rtl { border-left-color: $color; };
+}
+
+@mixin border-color($top, $right, $bottom, $left) {
+	@include bid-all-directions(border-color, $top, $right, $bottom, $left);
+}
+
+
+// generic
+@mixin border-left($border-style) {
+	@include ltr { border-left: $border-style; };
+	@include rtl { border-right: $border-style; };
+}
+
+@mixin border-right($border-style) {
+	@include ltr { border-right: $border-style; };
+	@include rtl { border-left: $border-style; };
+}
+
+// radius
+@mixin border-top-left-radius($radius) {
+	@include ltr { border-top-left-radius: $radius; };
+	@include rtl { border-top-right-radius: $radius; };
+}
+
+@mixin border-top-right-radius($radius) {
+	@include ltr { border-top-right-radius: $radius; };
+	@include rtl { border-top-left-radius: $radius; };
+}
+
+@mixin border-bottom-left-radius($radius) {
+	@include ltr { border-bottom-left-radius: $radius; };
+	@include rtl { border-bottom-right-radius: $radius; };
+}
+
+@mixin border-bottom-right-radius($radius) {
+	@include ltr { border-bottom-right-radius: $radius; };
+	@include rtl { border-bottom-left-radius: $radius; };
+}
+
+@mixin border-right-radius($radius) {
+  @include border-top-right-radius($radius);
+  @include border-bottom-right-radius($radius);
+}
+
+@mixin border-left-radius($radius) {
+  @include border-top-left-radius($radius);
+  @include border-bottom-left-radius($radius);
+}
+
+@mixin border-top-radius($radius) {
+  @include border-top-left-radius($radius);
+  @include border-top-right-radius($radius);
+}
+
+@mixin border-bottom-radius($radius) {
+  @include border-bottom-left-radius($radius);
+  @include border-bottom-right-radius($radius);
+}
+
+@mixin border-radius($topLeft, $topRight: null, $bottomRight: null, $bottomLeft: null) {
+  @if $topRight != null {
+    @include border-top-left-radius($topLeft);
+    @include border-top-right-radius($topRight);
+    @include border-bottom-right-radius($bottomRight);
+    @include border-bottom-left-radius($bottomLeft);
+  } @else {
+    border-radius: $topLeft;
+  }
+}
