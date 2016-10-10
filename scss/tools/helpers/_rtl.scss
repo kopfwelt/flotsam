@@ -84,7 +84,7 @@
 			@if $direction == left {
 	    float: right;
 	  } @else if $direction == right {
-	    float: = left;
+	    float: left;
 	  } @else {
 	    float: $direction;
 	  }
