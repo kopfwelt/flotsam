@@ -4,7 +4,7 @@
 
 body {
 	// Remove default browser margin.
-	margin: 0;
+	margin: 0 !default;
 }
 
 // Set a consistent margin between block elements.
@@ -24,8 +24,8 @@ fieldset,
 table,
 address,
 figure {
-	margin-top: 0 ;
-	margin-bottom: rem($spacing-m) ;
+	margin-top: 0  !default;
+	margin-bottom: rem($spacing-m)  !default;
 }
 
 // Responsive media
@@ -35,5 +35,5 @@ canvas,
 video,
 audio,
 embed {
-	max-width: 100%;
+	max-width: 100% !default;
 }

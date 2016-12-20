@@ -4,25 +4,25 @@
 
 
 html {
-	color: $text-color;
+	color: $text-color !default;
 
 	// Enable kerning and ligatures in all browsers.
 	// - http://blog.typekit.com/2014/02/05/kerning-on-the-web/
 	// - https://github.com/kennethormandy/normalize-opentype.css
-	text-rendering: optimizeLegibility;
-	font-feature-settings: "kern" 1;
-	font-kerning: normal;
+	text-rendering: optimizeLegibility !default;
+	font-feature-settings: "kern" 1 !default;
+	font-kerning: normal !default;
 
 	@include font-arial-regular;
 }
 
 @mixin type-title1 {
 	@include font-arial-bold;
-	font-size: rem(22);
-	line-height: 1.1;
-	text-transform: uppercase;
-	letter-spacing: $ls1;
-	margin-bottom: $spacing-s;
+	font-size: rem(22) !default;
+	line-height: 1.1 !default;
+	text-transform: uppercase !default;
+	letter-spacing: $ls1 !default;
+	margin-bottom: $spacing-s !default;
 }
 
 @mixin type-title2 {
@@ -32,56 +32,56 @@ html {
 
 @mixin type-title3 {
 	@include font-arial-bold;
-	font-size: rem(15);
+	font-size: rem(15) !default;
 }
 
 @mixin type-title4 {
 	@include font-arial-bold;
-	font-size: rem(12);
+	font-size: rem(12) !default;
 }
 
 
 @mixin type-copy {
 	@include font-arial-regular;
-	font-size: rem(14);
+	font-size: rem(14) !default;
 }
 
 @mixin type-quote {
 	@include font-lato;
-	font-size: rem(25);
+	font-size: rem(25) !default;
 	line-height: (50/40);
 	@media (min-width: $layout-sm) {
-		font-size: rem(40);
+		font-size: rem(40) !default;
 	}
 }
 
 @mixin type-smallCopy {
 	@include font-arial-regular;
-	font-size: rem(12);
-	line-height: 1.25;
+	font-size: rem(12) !default;
+	line-height: 1.25 !default;
 	// margin-bottom: $spacing-sm;
 }
 
 @mixin type-textInput {
 	@include font-arial-bold;
-	font-size: rem(12);
+	font-size: rem(12) !default;
 }
 
 @mixin type-label {
 	@include font-arial-regular;
-	font-size: rem(11);
+	font-size: rem(11) !default;
 }
 
 @mixin type-button {
 	@include font-arial-regular;
-	font-size: rem(11);
-	text-transform: uppercase;
+	font-size: rem(11) !default;
+	text-transform: uppercase !default;
 }
 
 @mixin type-list {
 	@include font-arial-regular;
-	font-size: rem(20);
-	line-height: 1.5;
+	font-size: rem(20) !default;
+	line-height: 1.5 !default;
 }
 
 

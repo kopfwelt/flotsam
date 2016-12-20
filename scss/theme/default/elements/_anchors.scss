@@ -1,17 +1,17 @@
 /**
  * Anchor
- * 
+ *
  * A button suitable for giving stars to someone.
- * 
+ *
  * ```html
  * <a class="ag-btn">Button</a>
  * <button class="ag-btn ag-btn--primary">Button</button>
  * ```
- * 
+ *
  * Styleguide Elements.Anchors
  */
 a,
 a:visited {
-	color: $text-color;
-	text-decoration: none;
+	color: $text-color !default;
+	text-decoration: none !default;
 }

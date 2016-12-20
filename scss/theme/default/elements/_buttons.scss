@@ -10,31 +10,31 @@
 //  *
 //  * Styleguide Elements.Buttons
 
-$space: 30px;
+$space: 30px !default;
 
 .Button {
-	display: inline-block;
-	cursor: pointer;
-	border: 0;
-	background-color: black;
-	color: white;
-	padding: 0.3rem 1.5rem 0.3rem;
-	min-width: rem(135);
-	min-height: rem(50);
-	text-align: center;
+	display: inline-block !default;
+	cursor: pointer !default;
+	border: 0 !default;
+	background-color: black !default;
+	color: white !default;
+	padding: 0.3rem 1.5rem 0.3rem !default;
+	min-width: rem(135) !default;
+	min-height: rem(50) !default;
+	text-align: center !default;
 
 	@media (max-width: $layout-m) {
-		font-size: rem(14);
+		font-size: rem(14) !default;
 	}
 }
 
 .Button + .Button {
-	margin-left: rem($space / 2);
+	margin-left: rem($space / 2) !default;
 }
 
 a.Button {
-	color: white;
-	text-decoration: none;
+	color: white !default;
+	text-decoration: none !default;
 }
 
 /**
@@ -43,14 +43,14 @@ a.Button {
 
 .Button:hover,
 .Button:focus {
-	text-decoration: none;
+	text-decoration: none !default;
 }
 
 .Button:active {}
 
 .Button:disabled {
-	cursor: default;
-	opacity: 0.75;
+	cursor: default !default;
+	opacity: 0.75 !default;
 }
 
 /**
@@ -59,8 +59,8 @@ a.Button {
 
 .Button--flex {
 	// because <button> can't be flex, need a width value
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: center;
+	display: flex !default;
+	flex-flow: row nowrap !default;
+	align-items: center !default;
+	justify-content: center !default;
 }

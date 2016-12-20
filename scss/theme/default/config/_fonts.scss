@@ -9,8 +9,8 @@
  *   regular
  */
 @mixin font-arial-regular {
-	font-family: "arial", sans-serif;
-	font-weight: 400;
+	font-family: "arial", sans-serif !default;
+	font-weight: 400 !default;
 }
 
 /**
@@ -18,8 +18,8 @@
  *   bold
  */
 @mixin font-arial-bold {
-	font-family: "arial", sans-serif;
-	font-weight: 700;
+	font-family: "arial", sans-serif !default;
+	font-weight: 700 !default;
 }
 
 /**
@@ -27,9 +27,9 @@
  *   light italic
  */
 @mixin font-lato {
-	font-family: "Lato";
-	font-style: normal;
-	font-weight: 700;
+	font-family: "Lato" !default;
+	font-style: normal !default;
+	font-weight: 700 !default;
 }
 
 /**
