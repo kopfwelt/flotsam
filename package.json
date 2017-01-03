@@ -4,7 +4,8 @@
   "description": "A basic framework using SUIT CSS naming convention",
   "main": "index.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docset": "node docset.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/kopfwelt/kern/issues"
   },
-  "homepage": "https://github.com/kopfwelt/kern#readme"
+  "homepage": "https://github.com/kopfwelt/kern#readme",
+  "devDependencies": {
+    "docset-generator": "^0.2.2"
+  }
 }
