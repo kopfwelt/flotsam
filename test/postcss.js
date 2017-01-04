@@ -4,19 +4,19 @@ import postcss from 'postcss';
 import test from 'ava';
 
 // postcss plugins
-import atImport from 'postcss-import';
-
-
-const processor = postcss().use(atImport({
-	root: './css'
-})); // plugins []
+import preprocessor from 'suitcss-preprocessor';
+import cssnext from 'cssnext';
+import mixins from 'postcss-mixins';
 
 test('Testing Kern framework', async t => {
-    const postcss = await pify(fs.readFile)('./css/kern.css', 'utf8');
+    const css = await pify(fs.readFile)('./css/kern.css', 'utf8');
     const fixture = await pify(fs.readFile)('./test/fixtures/kern.css', 'utf8');
-    const result = await processor.process(postcss, {
-    	from: './css/kern.css'
-    });
+    
+    const result = await preprocessor(css, {
+		root: './css/kern.css',
+		minify: true,
+		use: ['postcss-mixins', 'cssnext']
+    }, './css/kern.css');
+
     t.is(result.css, fixture);
 });
-

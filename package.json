@@ -24,14 +24,14 @@
   "homepage": "https://github.com/kopfwelt/kern#readme",
   "devDependencies": {
     "ava": "^0.17.0",
+    "cssnext": "^1.8.4",
     "docset-generator": "^0.2.2",
-    "fs-promise": "^1.0.0",
     "git-rev": "^0.2.1",
+    "pify": "^2.3.0",
     "postcss": "^5.2.8",
-    "postcss-import": "^9.0.0",
-    "showdown": "^1.5.5"
+    "postcss-mixins": "^5.4.1",
+    "showdown": "^1.5.5",
+    "suitcss-preprocessor": "^3.0.1"
   },
-  "dependencies": {
-    "pify": "^2.3.0"
-  }
+  "dependencies": {}
 }
