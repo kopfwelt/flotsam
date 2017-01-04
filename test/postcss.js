@@ -3,13 +3,20 @@ import pify from 'pify';
 import postcss from 'postcss';
 import test from 'ava';
 
+// postcss plugins
+import atImport from 'postcss-import';
 
-const processor = postcss(); // plugins []
 
-test(async t => {
-    const postcss = await pify(fs.readFile)('./scss/_kern.scss', 'utf8');
+const processor = postcss().use(atImport({
+	root: './css'
+})); // plugins []
+
+test('Testing Kern framework', async t => {
+    const postcss = await pify(fs.readFile)('./css/kern.css', 'utf8');
     const fixture = await pify(fs.readFile)('./test/fixtures/kern.css', 'utf8');
-    const css = await processor.process(postcss);
-    t.is(postcss, fixture);
+    const result = await processor.process(postcss, {
+    	from: './css/kern.css'
+    });
+    t.is(result.css, fixture);
 });
 

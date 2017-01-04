@@ -28,6 +28,7 @@
     "fs-promise": "^1.0.0",
     "git-rev": "^0.2.1",
     "postcss": "^5.2.8",
+    "postcss-import": "^9.0.0",
     "showdown": "^1.5.5"
   },
   "dependencies": {
