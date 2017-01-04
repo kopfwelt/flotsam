@@ -1,11 +1,11 @@
 {
   "name": "kern",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A basic framework using SUIT CSS naming convention",
   "main": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docset": "node docset.js"
+    "docset": "node docset.js && cd docset && tar --exclude='.DS_Store' -cvzf kern.tgz kern.docset && cd .. && shipit production docset"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/kopfwelt/kern#readme",
   "devDependencies": {
-    "docset-generator": "^0.2.2"
+    "docset-generator": "^0.2.2",
+    "git-rev": "^0.2.1"
   }
 }
