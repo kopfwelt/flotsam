@@ -1,19 +1,19 @@
-@import './config/colors';
-@import './config/easings';
-@import './config/fonts';
-@import './config/spacing';
-@import './config/breakpoints';
+@import './config/colors.css';
+@import './config/easings.css';
+@import './config/fonts.css';
+@import './config/spacing.css';
+@import './config/breakpoints.css';
 
-@import './elements/anchors';
-@import './elements/buttons';
-@import './elements/defaults';
-@import './elements/divider';
-// @import './elements/forms';
-@import './elements/html';
-@import './elements/icons';
-@import './elements/images';
-@import './elements/typography';
+@import './elements/anchors.css';
+@import './elements/buttons.css';
+@import './elements/defaults.css';
+@import './elements/divider.css';
+// @import './elements/forms.css';
+@import './elements/html.css';
+@import './elements/icons.css';
+@import './elements/images.css';
+@import './elements/typography.css';
 
-@import './layout/nav';
-@import './layout/regions/footer';
-@import './layout/regions/header';
+@import './layout/nav.css';
+@import './layout/regions/footer.css';
+@import './layout/regions/header.css';

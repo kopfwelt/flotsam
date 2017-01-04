@@ -1,5 +1,5 @@
-@import './config/colors';
-@import './config/easings';
-@import './config/fonts';
-@import './config/spacing';
-@import './config/breakpoints';
+@import './config/colors.css';
+@import './config/easings.css';
+@import './config/fonts.css';
+@import './config/spacing.css';
+@import './config/breakpoints.css';

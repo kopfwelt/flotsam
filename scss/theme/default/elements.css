@@ -1,9 +1,9 @@
-@import './elements/anchors';
-@import './elements/buttons';
-@import './elements/defaults';
-@import './elements/divider';
-// @import './elements/forms';
-@import './elements/html';
-@import './elements/icons';
-@import './elements/images';
-@import './elements/typography';
+@import './elements/anchors.css';
+@import './elements/buttons.css';
+@import './elements/defaults.css';
+@import './elements/divider.css';
+// @import './elements/forms.css';
+@import './elements/html.css';
+@import './elements/icons.css';
+@import './elements/images.css';
+@import './elements/typography.css';
