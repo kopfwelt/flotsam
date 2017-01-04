@@ -4,7 +4,7 @@
   "description": "A basic framework using SUIT CSS naming convention",
   "main": "index.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ava",
     "docset": "node docset.js && cd docset && tar --exclude='.DS_Store' -cvzf kern.tgz kern.docset && cd .. && shipit production docset"
   },
   "repository": {
@@ -23,7 +23,14 @@
   },
   "homepage": "https://github.com/kopfwelt/kern#readme",
   "devDependencies": {
+    "ava": "^0.17.0",
     "docset-generator": "^0.2.2",
-    "git-rev": "^0.2.1"
+    "fs-promise": "^1.0.0",
+    "git-rev": "^0.2.1",
+    "postcss": "^5.2.8",
+    "showdown": "^1.5.5"
+  },
+  "dependencies": {
+    "pify": "^2.3.0"
   }
 }
