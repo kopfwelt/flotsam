@@ -17,9 +17,9 @@
  */
 
 @import "./utilities/clearfix.css";
+@import "./utilities/flex.css";
 
 /*
-@import "./utilities/flex.css";
 @import "./utilities/ratio.css";
 @import "./utilities/navigation.css";
 @import "./utilities/position.css";

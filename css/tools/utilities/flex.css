@@ -1,18 +1,24 @@
+/**
+ * @TODO responsive flex utilities classes (like grid.scss)
+ */
+
 .u-flex {
-	display: flex;
+  display: flex;
 }
+
 .u-rowwrap {
-	flex-flow: row wrap;
+  flex-flow: row wrap;
 }
+
 .u-column {
-	flex-direction: column;
+  flex-direction: column;
 }
+
 .u-justifyCenter {
-	justify-content: center;
+  justify-content: center;
 }
+
 .u-justifySpaceBetween {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
-
-// TODO responsive flex utilities classes (like grid.scss)
