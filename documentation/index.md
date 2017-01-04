@@ -3,6 +3,21 @@ Kern is a CSS framework based on [SUIT CSS](https://suitcss.github.io) by [KOPFW
 ## Contents
 {{TOC}}
 
+## Usage
+Install kern framework using npm:  
+```
+npm i -S kopfwelt/kern
+```
+
+In your main css file:
+
+```css
+@import 'kern';
+@import 'kern-theme';
+@import 'kern/component-name';
+```
+
+
 ## File structure
 ### Framework
 
