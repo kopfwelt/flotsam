@@ -1,0 +1,15 @@
+
+/**
+ * Theme specific variables
+ * Try to avoid to use the color code directly
+ */
+
+:root {
+	--primary-color: red;
+	--background-color: white;
+	--text-color: black;
+	--overlay-bg: gray;
+	--error-validation: red;
+	--white: #ffffff;
+	--black: #000000;
+}

@@ -3,7 +3,7 @@
  */
 
 .SiteHeader {
-	@include font-arial-bold;
+	@mixin font-arial-bold;
 
 	.Bar {
 		font-size: rem(14);

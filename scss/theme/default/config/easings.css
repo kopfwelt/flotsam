@@ -1,0 +1,7 @@
+/**
+ * Good looking animations
+ */
+
+:root {
+	--easing:  cubic-bezier(0.165, 0.840, 0.400, 1.000);
+}

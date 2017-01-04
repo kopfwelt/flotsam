@@ -1,4 +1,4 @@
-@mixin ratio($width, $height) {
+@define-mixin ratio($width, $height) {
 	position: relative;
 
 	&::after {
@@ -11,7 +11,7 @@
 	}
 }
 
-@mixin ratio-inner {
+@define-mixin ratio-inner {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -20,36 +20,36 @@
 }
 
 // Deprecated, don't use.
-@mixin aspect-ratio($width, $height) {
-	@include ratio($width, $height);
+@define-mixin aspect-ratio($width, $height) {
+	@mixin ratio($width, $height);
 }
-@mixin aspect-ratio-inner {
-	@include ratio-inner;
+@define-mixin aspect-ratio-inner {
+	@mixin ratio-inner;
 }
 
 
 .Ratio,
 .Ratio--16-9 {
-	@include aspect-ratio(16, 9);
+	@mixin aspect-ratio(16, 9);
 }
 .Ratio--16-18 {
-	@include aspect-ratio(16, 18);
+	@mixin aspect-ratio(16, 18);
 }
 .Ratio--32-9 {
-	@include aspect-ratio(32, 9);
+	@mixin aspect-ratio(32, 9);
 }
 .Ratio--4-3 {
-	@include aspect-ratio(4, 3);
+	@mixin aspect-ratio(4, 3);
 }
 .Ratio--1-2 {
-	@include aspect-ratio(1, 2);
+	@mixin aspect-ratio(1, 2);
 }
 .Ratio--2-1 {
-	@include aspect-ratio(2, 1);
+	@mixin aspect-ratio(2, 1);
 }
 .Ratio--1-1 {
-	@include aspect-ratio(1, 1);
+	@mixin aspect-ratio(1, 1);
 }
 .Ratio-inner {
-	@include aspect-ratio-inner;
+	@mixin aspect-ratio-inner;
 }

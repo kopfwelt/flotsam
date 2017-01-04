@@ -1,0 +1,25 @@
+/**
+ * Navigation
+ */
+
+a.Nav-item:matches(:hover, .is-active) {
+	background-color: hsla(0,0%,100%,.15);
+}
+
+.Bar--horizontal {
+	& .Bar-item:last-of-type {
+		& > * {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+	& .Nav-item {
+		padding-left: var(--spacing-s);
+		padding-right: var(--spacing-s);
+
+		@media (min-width: var(--layout-ml)) {
+			padding-left: var(--spacing-sm);
+			padding-right: var(--spacing-sm);
+		}
+	}
+}
