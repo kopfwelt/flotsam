@@ -1,3 +1,26 @@
+var Markdown = require('markdown-to-html').Markdown;
+var md = new Markdown();
+md.bufmax = 2048;
+var fileName = 'documentation/index.md';
+var opts = {title: 'File $BASENAME in $DIRNAME'}; //, stylesheet: 'test/style.css'
+
+// Write a header.
+console.log('===============================');
+// Write a trailer at eof.
+md.once('end', function() {
+  console.log('===============================');
+});
+md.render(fileName, opts, function(err) {
+  if (err) {
+    console.error('>>>' + err);
+    process.exit();
+  }
+  md.pipe(process.stdout);
+});
+
+/*
+
+
 var DocSetGenerator = require('docset-generator').DocSetGenerator;
 var generator = new DocSetGenerator({
     destination: "./docset",
@@ -10,7 +33,7 @@ var generator = new DocSetGenerator({
     {
     	name:'colors',
     	type:'Style',
-    	path:'index.html'
+    	path:'index.md'
     }
     ]
 
@@ -75,3 +98,4 @@ git.tag(function (tag) {
         console.log("The file was saved!");
     }); 
 });
+*/
