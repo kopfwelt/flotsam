@@ -8,20 +8,17 @@
  * Nimbus sans extended
  *   regular
  */
-@mixin font-arial-regular {
+@define-mixin font-arial-regular {
 	font-family: "arial", sans-serif;
-
 	font-weight: 400 ;
-
 }
 
 /**
  * Nimbus sans extended
  *   bold
  */
-@mixin font-arial-bold {
+@define-mixin font-arial-bold {
 	font-family: "arial", sans-serif;
-
 	font-weight: 700 ;
 }
 
@@ -29,38 +26,43 @@
  * Didot
  *   light italic
  */
-@mixin font-lato {
-
+@define-mixin font-lato {
 	font-family: "Lato" ;
 	font-style: normal ;
 	font-weight: 700 ;
 }
 
-/**
- * Root sizes
- */
-$root-font-size: 15px !default;
-$root-line-height: 1.3125 !default;
 
-/**
- * Font sizes
- */
-$font-11: 11px !default;
-$font-12: 12px !default;
-$font-14: 14px !default;
-$font-15: 15px !default;
-$font-16: 16px !default;
-$font-18: 18px !default;
-$font-20: 20px !default;
-$font-22: 22px !default;
-$font-25: 25px !default;
-$font-30: 30px !default;
-$font-40: 40px !default;
-$font-60: 60px !default;
 
-/**
- * Letter spacings
- */
-$ls0: 0.025em !default;
-$ls1: 0.05em !default;
-$ls2: 0.1em !default;
+:root {
+	/**
+	 * Root sizes
+	 */
+	--root-font-size: 15px ;
+	--root-line-height: 1.3125 ;
+
+
+	/**
+	 * font sizes
+	 */
+	--font-11: 11px ;
+	--font-12: 12px ;
+	--font-14: 14px ;
+	--font-15: 15px ;
+	--font-16: 16px ;
+	--font-18: 18px ;
+	--font-20: 20px ;
+	--font-22: 22px ;
+	--font-25: 25px ;
+	--font-30: 30px ;
+	--font-40: 40px ;
+	--font-60: 60px ;
+
+	/**
+	 * Line he sizes
+	 */
+	--ls0: 0.025em ;
+	--ls1: 0.05em ;
+	--ls2: 0.1em ;
+
+}

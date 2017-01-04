@@ -12,6 +12,6 @@
  */
 a,
 a:visited {
-	color: $text-color !default;
-	text-decoration: none !default;
+	color: var(--text-color) ;
+	text-decoration: none ;
 }

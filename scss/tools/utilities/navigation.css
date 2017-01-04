@@ -2,7 +2,7 @@
  * Predefined navigation mixins
  */
 
-@mixin navHorizontal {
+@define-mixin navHorizontal {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -12,7 +12,7 @@
 	}
 }
 
-@mixin navVertical {
+@define-mixin navVertical {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: no-wrap;
@@ -22,4 +22,4 @@
 	}
 }
 
-// @mixin navItem? - thought the styles were too specific (Kimberly)
+// @define-mixin navItem? - thought the styles were too specific (Kimberly)

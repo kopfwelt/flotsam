@@ -1,13 +1,11 @@
 /**
- * Resets default margins
+ * Resets default 
  */
 
 body {
-	// Remove default browser margin.
-	margin: 0 !default;
+	margin: 0 ;
 }
 
-// Set a consistent margin between block elements.
 h1,
 h2,
 h3,
@@ -24,16 +22,15 @@ fieldset,
 table,
 address,
 figure {
-	margin-top: 0  !default;
-	margin-bottom: rem($spacing-m)  !default;
+	margin-top: 0  ;
+	margin-bottom: var(--spacing-m);
 }
 
-// Responsive media
 iframe,
 img,
 canvas,
 video,
 audio,
 embed {
-	max-width: 100% !default;
+	max-width: 100% ;
 }

@@ -50,7 +50,7 @@
 
 	.Bar-item:last-of-type {
 		padding-right: $spacing-s;
-		@include font-arial-bold;
+		@mixin font-arial-bold;
 
 		@media (min-width: $layout-ml) {
 			padding-right: $spacing-sm;

@@ -1,40 +1,24 @@
-// /**
-//  * Buttons
-//  *
-//  * A button suitable for giving stars to someone.
-//  *
-//  * :hover             - Subtle hover highlight.
-//  * .stars-given       - A highlight indicating you've already given a star.
-//  * .stars-given:hover - Subtle hover highlight on top of stars-given styling.
-//  * .disabled          - Dims the button to indicate it cannot be used.
-//  *
-//  * Styleguide Elements.Buttons
+/**
+ * Buttons
+ */
 
-$space: 30px !default;
 
 .Button {
-	display: inline-block !default;
-	cursor: pointer !default;
-	border: 0 !default;
-	background-color: black !default;
-	color: white !default;
-	padding: 0.3rem 1.5rem 0.3rem !default;
-	min-width: rem(135) !default;
-	min-height: rem(50) !default;
-	text-align: center !default;
-
-	@media (max-width: $layout-m) {
-		font-size: rem(14) !default;
-	}
+	display: inline-block ;
+	cursor: pointer ;
+	border: 0 ;
+	background-color: black ;
+	color: white ;
+	padding: 8px 16px ;
+	min-width: 135px ;
+	min-height: 50px ;
+	text-align: center ;
 }
 
-.Button + .Button {
-	margin-left: rem($space / 2) !default;
-}
 
 a.Button {
-	color: white !default;
-	text-decoration: none !default;
+	color: white ;
+	text-decoration: none ;
 }
 
 /**
@@ -43,24 +27,23 @@ a.Button {
 
 .Button:hover,
 .Button:focus {
-	text-decoration: none !default;
+	text-decoration: none ;
 }
 
 .Button:active {}
 
 .Button:disabled {
-	cursor: default !default;
-	opacity: 0.75 !default;
+	cursor: default ;
+	opacity: 0.75 ;
 }
 
 /**
  * Modifiers
- */
+*/
 
 .Button--flex {
-	// because <button> can't be flex, need a width value
-	display: flex !default;
-	flex-flow: row nowrap !default;
-	align-items: center !default;
-	justify-content: center !default;
+	display: flex ;
+	flex-flow: row nowrap ;
+	align-items: center ;
+	justify-content: center ;
 }

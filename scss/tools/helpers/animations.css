@@ -7,7 +7,7 @@
  * puts a higher and higher transition-delay on items so they appear one after another
  */
 
-@mixin iterative-delay($count: 2, $delay: 0.07s) {
+@define-mixin iterative-delay($count: 2, $delay: 0.07s) {
 	@for $i from 1 through $count {
 		&:nth-child(#{$i}) {
 			transition-delay: $delay * $i;

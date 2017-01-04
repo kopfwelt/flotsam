@@ -10,7 +10,7 @@
  */
 
 
-@mixin negative-text() {
+@define-mixin negative-text() {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -22,12 +22,12 @@
  */
 
 
-@mixin hide-text {
+@define-mixin hide-text {
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
 }
 
 .u-hideText {
-	@include hide-text();
+	@mixin hide-text();
 }

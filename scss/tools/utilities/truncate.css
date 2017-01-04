@@ -2,7 +2,7 @@
  * Text truncate
  */
 
-@mixin text-truncate() {
+@define-mixin text-truncate() {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -14,10 +14,10 @@
 // .Element {
 // 	  display: inline-block;
 // 	  max-width: 200px;
-// 	  @include text-truncate;
+// 	  @mixin text-truncate;
 // }
 
 
 .u-textTruncate {
-	@include text-truncate;
+	@mixin text-truncate;
 }

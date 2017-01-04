@@ -1,7 +1,7 @@
 /**
  * Creates classes like .Color--black from lists
  */
-@mixin createColorClassNames($listOfColors) {
+@define-mixin createColorClassNames($listOfColors) {
   @each $name, $color in $listOfColors {
     .Color--#{$name} {
       background: $color;

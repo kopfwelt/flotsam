@@ -1,7 +1,7 @@
 /**
  * Left to right
  */
-@mixin ltr {
+@define-mixin ltr {
 	[dir="ltr"] & {
 		@content;
 	}
@@ -10,7 +10,7 @@
 /**
  * Right to left
  */
-@mixin rtl {
+@define-mixin rtl {
 	[dir="rtl"] & {
 		@content;
 	}

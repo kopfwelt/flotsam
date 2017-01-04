@@ -1,122 +1,99 @@
 /**
- * Global styles (avoid anything but element selectors here)
+ * Fonts and characteristique
  */
 
 
 html {
-	color: $text-color !default;
+	color: var(--text-color) ;
+	text-rendering: optimizeLegibility ;
+	font-feature-settings: "kern" 1 ;
+	font-kerning: normal ;
 
-	// Enable kerning and ligatures in all browsers.
-	// - http://blog.typekit.com/2014/02/05/kerning-on-the-web/
-	// - https://github.com/kennethormandy/normalize-opentype.css
-	text-rendering: optimizeLegibility !default;
-	font-feature-settings: "kern" 1 !default;
-	font-kerning: normal !default;
-
-	@include font-arial-regular;
+	@mixin font-arial-regular;
 }
 
-@mixin type-title1 {
-	@include font-arial-bold;
-	font-size: rem(22) !default;
-	line-height: 1.1 !default;
-	text-transform: uppercase !default;
-	letter-spacing: $ls1 !default;
-	margin-bottom: $spacing-s !default;
+@define-mixin type-title1 {
+	@mixin font-arial-bold;
+	font-size: 22px ;
+	line-height: 1.1 ;
+	text-transform: uppercase ;
+	letter-spacing: var(--ls1) ;
+	margin-bottom: var(--spacing-s) ;
 }
 
-@mixin type-title2 {
-	@include type-title1;
-	@include font-arial-regular;
+@define-mixin type-title2 {
+	@mixin type-title1;
+	@mixin font-arial-regular;
 }
 
-@mixin type-title3 {
-	@include font-arial-bold;
-	font-size: rem(15) !default;
+@define-mixin type-title3 {
+	@mixin font-arial-bold;
+	font-size: 15px ;
 }
 
-@mixin type-title4 {
-	@include font-arial-bold;
-	font-size: rem(12) !default;
+@define-mixin type-title4 {
+	@mixin font-arial-bold;
+	font-size: 12px ;
 }
 
 
-@mixin type-copy {
-	@include font-arial-regular;
-	font-size: rem(14) !default;
+@define-mixin type-copy {
+	@mixin font-arial-regular;
+	font-size: 14px ;
 }
 
-@mixin type-quote {
-	@include font-lato;
-	font-size: rem(25) !default;
+@define-mixin type-quote {
+	@mixin font-lato;
+	font-size: 25px ;
 	line-height: (50/40);
-	@media (min-width: $layout-sm) {
-		font-size: rem(40) !default;
+	@media (min-width: var(--layout-sm)) {
+		font-size: 40px ;
 	}
 }
 
-@mixin type-smallCopy {
-	@include font-arial-regular;
-	font-size: rem(12) !default;
-	line-height: 1.25 !default;
-	// margin-bottom: $spacing-sm;
+@define-mixin type-smallCopy {
+	@mixin font-arial-regular;
+	font-size: 12px ;
+	line-height: 1.25 ;
+	// margin-bottom: var(--spacing-sm);
 }
 
-@mixin type-textInput {
-	@include font-arial-bold;
-	font-size: rem(12) !default;
+@define-mixin type-textInput {
+	@mixin font-arial-bold;
+	font-size: 12px ;
 }
 
-@mixin type-label {
-	@include font-arial-regular;
-	font-size: rem(11) !default;
+@define-mixin type-label {
+	@mixin font-arial-regular;
+	font-size: 11px ;
 }
 
-@mixin type-button {
-	@include font-arial-regular;
-	font-size: rem(11) !default;
-	text-transform: uppercase !default;
+@define-mixin type-button {
+	@mixin font-arial-regular;
+	font-size: 11px ;
+	text-transform: uppercase ;
 }
 
-@mixin type-list {
-	@include font-arial-regular;
-	font-size: rem(20) !default;
-	line-height: 1.5 !default;
+@define-mixin type-list {
+	@mixin font-arial-regular;
+	font-size: 20px ;
+	line-height: 1.5 ;
 }
 
 
 
 
 
-.type-title1 { 		@include type-title1; }
-.type-title2 { 		@include type-title2; }
-// .type-subtitle1 { @include type-subtitle1; }
-// .type-subtitle2 { @include type-subtitle2; }
-.type-title3 { 		@include type-title3; }
-.type-title4 { 		@include type-title4; }
-.type-navigation { 	@include type-copy; }
-.type-button { 		@include type-button; }
-.type-textInput { 	@include type-textInput; }
-.type-copy { 		@include type-copy; }
-.type-smallCopy { 	@include type-smallCopy; }
-.type-label { 		@include type-label; }
-.type-list { 		@include type-list; }
-.type-quote { 		@include type-quote; }
-
-
-
-
-// @import 'kern/scss/tools/helpers/mixin-to-class';
-
-// @mixin createClassNames($listOfMixins) {
-//   @each $className, $mixinName in $listOfMixins {
-//     .#{$className} {
-// 		@include #{$mixinName};
-
-// 		// @include #{$mixin};
-// 		font-size: 60px;
-//     }
-//   }
-// }
-
-// @include createClassNames( (type-title1: "type-title1") );
+.type-title2 { 		@mixin type-title2; }
+// .type-subtitle1 { @mixin type-subtitle1; }
+// .type-subtitle2 { @mixin type-subtitle2; }
+.type-title3 { 		@mixin type-title3; }
+.type-title4 { 		@mixin type-title4; }
+.type-navigation { 	@mixin type-copy; }
+.type-button { 		@mixin type-button; }
+.type-textInput { 	@mixin type-textInput; }
+.type-copy { 		@mixin type-copy; }
+.type-smallCopy { 	@mixin type-smallCopy; }
+.type-label { 		@mixin type-label; }
+.type-list { 		@mixin type-list; }
+.type-quote { 		@mixin type-quote; }

@@ -43,13 +43,13 @@
 /* Ratio gallery (scale to the right format) */
 // Responsive images are adjusted to the same.
 .GalleryRatio {
-	@include aspect-ratio(35, 25);
+	@mixin aspect-ratio(35, 25);
 	> .Gallery:not(.Gallery--nav) {
-		@include aspect-ratio-inner;
+		@mixin aspect-ratio-inner;
 	}
 
 	// @media (orientation: portrait) and (max-width: 650px) {
-	// 	@include aspect-ratio(9, 16);
+	// 	@mixin aspect-ratio(9, 16);
 	// }
 }
 
