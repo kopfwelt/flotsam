@@ -85,8 +85,6 @@ html {
 
 
 .type-title2 { 		@mixin type-title2; }
-// .type-subtitle1 { @mixin type-subtitle1; }
-// .type-subtitle2 { @mixin type-subtitle2; }
 .type-title3 { 		@mixin type-title3; }
 .type-title4 { 		@mixin type-title4; }
 .type-navigation { 	@mixin type-copy; }
