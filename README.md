@@ -8,7 +8,17 @@ Kern is a CSS framework based on [SUIT CSS](https://suitcss.github.io) by [KOPFW
 ```sh
 $ npm i -S kopfwelt/kern
 ```
+## Test
 
+```sh
+$ npm test
+```
+
+Watching
+
+```sh
+$ npm test -- --watch
+```
 ## Generating dockset
 
 
