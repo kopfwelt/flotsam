@@ -1,6 +1,6 @@
 {
   "name": "kern",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A basic framework using SUIT CSS naming convention",
   "main": "index.scss",
   "scripts": {

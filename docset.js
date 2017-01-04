@@ -1,65 +1,65 @@
-// var DocSetGenerator = require('docset-generator').DocSetGenerator;
-// var generator = new DocSetGenerator({
-//     destination: "./docset",
-//     name: "Kern",
-//     identifier: "kern",
-//     documentation: "./documentation",
-//     // icon: "./styleguide/icon@2x.png",
-//     enableJavascript: true,
-//     entries:[
+var DocSetGenerator = require('docset-generator').DocSetGenerator;
+var generator = new DocSetGenerator({
+    destination: "./docset",
+    name: "Kern",
+    identifier: "kern",
+    documentation: "./documentation",
+    // icon: "./styleguide/icon@2x.png",
+    enableJavascript: true,
+    entries:[
+    {
+    	name:'colors',
+    	type:'Style',
+    	path:'index.html'
+    }
+    ]
+
 //     {
-//     	name:'colors',
+//     	name:'Typography',
 //     	type:'Style',
-//     	path:'index.html'
-//     }
-//     ]
+//     	path:'index.html#typography'
+//     },
 
-// //     {
-// //     	name:'Typography',
-// //     	type:'Style',
-// //     	path:'index.html#typography'
-// //     },
+//     {
+//     	name:'Grids',
+//     	type:'Style',
+//     	path:'index.html#grids-gb'
+//     },
 
-// //     {
-// //     	name:'Grids',
-// //     	type:'Style',
-// //     	path:'index.html#grids-gb'
-// //     },
+// // Components
+//     {
+//     	name:'Burger',
+//     	type:'Component',
+//     	path:'components.html#burger'
+//     },
 
-// // // Components
-// //     {
-// //     	name:'Burger',
-// //     	type:'Component',
-// //     	path:'components.html#burger'
-// //     },
+//     {
+//     	name:'Newsletter',
+//     	type:'Component',
+//     	path:'components.html#newsletter'
+//     },
 
-// //     {
-// //     	name:'Newsletter',
-// //     	type:'Component',
-// //     	path:'components.html#newsletter'
-// //     },
+//     {
+//     	name:'Gallery',
+//     	type:'Component',
+//     	path:'components.html#gallery'
+//     },
+// // Modules
+//     {
+//     	name:'Bar',
+//     	type:'Modules',
+//     	path:'modules.html#bar'
+//     },
+//     {
+//     	name:'Navigation',
+//     	type:'Modules',
+//     	path:'modules.html#navigation'
+//     }]
+  }
+);
+generator.create();
 
-// //     {
-// //     	name:'Gallery',
-// //     	type:'Component',
-// //     	path:'components.html#gallery'
-// //     },
-// // // Modules
-// //     {
-// //     	name:'Bar',
-// //     	type:'Modules',
-// //     	path:'modules.html#bar'
-// //     },
-// //     {
-// //     	name:'Navigation',
-// //     	type:'Modules',
-// //     	path:'modules.html#navigation'
-// //     }]
-//   }
-// );
-// generator.create();
-
-
+// generate feed xml
 var git = require('git-rev');
 git.tag(function (tag) {
     console.log('tag', tag);
@@ -74,11 +74,4 @@ git.tag(function (tag) {
 
         console.log("The file was saved!");
     }); 
-    /*
-   
-    */
-    // var originalContents = String(file.contents);
-    // var newContents = new Buffer(originalContents + '<!-- tag:' + tag + ' -->');
-    // file.contents = newContents;
-    // callback(null, file);
 });
