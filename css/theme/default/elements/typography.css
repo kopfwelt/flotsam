@@ -2,94 +2,143 @@
  * Fonts and characteristique
  */
 
-
 html {
-	@mixin font-arial-regular;
 
-	color: var(--text-color) ;
-	text-rendering: optimizeLegibility ;
-	font-feature-settings: "kern" 1 ;
-	font-kerning: normal ;
+	@mixin font-arial-regular;
+	color: var(--text-color);
+	font-feature-settings: "kern" 1;
+	font-kerning: normal;
+	text-rendering: optimizeLegibility;
 }
 
 @define-mixin type-title1 {
+
 	@mixin font-arial-bold;
-	font-size: 22px ;
-	line-height: 1.1 ;
-	text-transform: uppercase ;
-	letter-spacing: var(--ls1) ;
+	font-size: 22px;
+	letter-spacing: var(--ls1);
+	line-height: 1.1;
+	text-transform: uppercase;
 }
 
 @define-mixin type-title2 {
+
 	@mixin type-title1;
 	@mixin font-arial-regular;
 }
 
 @define-mixin type-title3 {
+
 	@mixin font-arial-bold;
-	font-size: 15px ;
+	font-size: 15px;
 }
 
 @define-mixin type-title4 {
+
 	@mixin font-arial-bold;
-	font-size: 12px ;
+	font-size: 12px;
 }
 
-
 @define-mixin type-copy {
+
 	@mixin font-arial-regular;
-	font-size: 14px ;
+	font-size: 14px;
 }
 
 @define-mixin type-quote {
+
 	@mixin font-lato;
-	font-size: 25px ;
+	font-size: 25px;
 	line-height: (50/40);
+
 	@media (min-width: var(--layout-sm)) {
-		font-size: 40px ;
+		font-size: 40px;
 	}
 }
 
 @define-mixin type-smallCopy {
+
 	@mixin font-arial-regular;
-	font-size: 12px ;
-	line-height: 1.25 ;
+	font-size: 12px;
+	line-height: 1.25;
 }
 
 @define-mixin type-textInput {
+
 	@mixin font-arial-bold;
-	font-size: 12px ;
+	font-size: 12px;
 }
 
 @define-mixin type-label {
+
 	@mixin font-arial-regular;
-	font-size: 11px ;
+	font-size: 11px;
 }
 
 @define-mixin type-button {
+
 	@mixin font-arial-regular;
-	font-size: 11px ;
-	text-transform: uppercase ;
+	font-size: 11px;
+	text-transform: uppercase;
 }
 
 @define-mixin type-list {
+
 	@mixin font-arial-regular;
-	font-size: 20px ;
-	line-height: 1.5 ;
+	font-size: 20px;
+	line-height: 1.5;
 }
 
+.type-title2 {
 
+	@mixin type-title2;
+}
 
+.type-title3 {
 
+	@mixin type-title3;
+}
 
-.type-title2 { 		@mixin type-title2; }
-.type-title3 { 		@mixin type-title3; }
-.type-title4 { 		@mixin type-title4; }
-.type-navigation { 	@mixin type-copy; }
-.type-button { 		@mixin type-button; }
-.type-textInput { 	@mixin type-textInput; }
-.type-copy { 		@mixin type-copy; }
-.type-smallCopy { 	@mixin type-smallCopy; }
-.type-label { 		@mixin type-label; }
-.type-list { 		@mixin type-list; }
-.type-quote { 		@mixin type-quote; }
+.type-title4 {
+
+	@mixin type-title4;
+}
+
+.type-navigation {
+
+	@mixin type-copy;
+}
+
+.type-button {
+
+	@mixin type-button;
+}
+
+.type-textInput {
+
+	@mixin type-textInput;
+}
+
+.type-copy {
+
+	@mixin type-copy;
+}
+
+.type-smallCopy {
+
+	@mixin type-smallCopy;
+}
+
+.type-label {
+
+	@mixin type-label;
+}
+
+.type-list {
+
+	@mixin type-list;
+}
+
+.type-quote {
+
+	@mixin type-quote;
+}
