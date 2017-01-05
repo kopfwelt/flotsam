@@ -25,8 +25,8 @@ a.Button {
  * UI states
  */
 
-.Button:hover,
-.Button:focus {
+.Button:matches(:hover, :focus)
+{
 	text-decoration: none ;
 }
 
