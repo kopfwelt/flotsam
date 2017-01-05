@@ -8,14 +8,13 @@
  * appear one after another
  */
 
-@define-mixin iterative-delay($count: 2, $delay: 0.07s) {
+@define-mixin iterative-delay $count: 2, $delay: 0.07s {
 
-  @for $i from 1 through $count {
+  @for $i from 1 to $count {
 
-    &:nth-child(#{$i}) {
-      transition-delay: $delay * $i;
+    &:nth-child($i) {
+      transition-delay: calc($delay * $i);
     }
-
   }
 
 }
