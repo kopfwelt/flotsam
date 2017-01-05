@@ -10,7 +10,7 @@ test('elements.css should provide a working css', async t => {
 
 
     const result = await preprocessor(css, {
-      root: './css/theme/default/elements.css',
+      root: '/css',
       minify: true,
       use: plugins
     });
