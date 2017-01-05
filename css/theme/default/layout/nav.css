@@ -2,9 +2,9 @@
  * Navigation
  */
 
-:matches(:hover) a {
+/*:matches(:hover) a {
 	background-color: hsla(0,0%,100%,.15);
-}
+}*/
 a.Nav-item.is-active {
 	background-color: hsla(0,0%,100%,.15);
 }
