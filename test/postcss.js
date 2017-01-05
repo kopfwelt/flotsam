@@ -8,7 +8,7 @@ import test from 'ava';
 import preprocessor from 'suitcss-preprocessor';
 
 test('Testing Kern framework', async t => {
-    const css = await pify(fs.readFile)('./css/kern.css', 'utf8');
+    const css = await pify(fs.readFile)('./css/index.css', 'utf8');
     const fixture = await pify(fs.readFile)('./test/fixtures/kern.css', 'utf8');
     
     const result = await preprocessor(css, {
