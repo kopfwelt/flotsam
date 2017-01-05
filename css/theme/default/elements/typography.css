@@ -6,9 +6,9 @@ html {
 
 	@mixin font-arial-regular;
 	color: var(--text-color);
-	font-feature-settings: "kern" 1;
+	/*font-feature-settings: "kern" 1;
 	font-kerning: normal;
-	text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;*/
 }
 
 @define-mixin type-title1 {
@@ -48,7 +48,7 @@ html {
 
 	@mixin font-lato;
 	font-size: 25px;
-	line-height: (50/40);
+	line-height: 1.25;
 
 	@media (min-width: var(--layout-sm)) {
 		font-size: 40px;
