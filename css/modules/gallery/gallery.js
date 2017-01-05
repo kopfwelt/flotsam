@@ -1,4 +1,4 @@
-const Flickity = require('flickity');
+const Flickity = require("flickity");
 
 const gallery = selector => {
 	const defaultOptions = {
@@ -8,7 +8,7 @@ const gallery = selector => {
 		// imagesLoaded: true,
 		// lazyLoad: 2,
 		percentPosition: true,
-		cellAlign: 'left',
+		cellAlign: "left",
 		setGallerySize: true,
 		contain: true,
 		autoPlay: 3000,
@@ -17,7 +17,7 @@ const gallery = selector => {
 	return new Flickity(selector, defaultOptions);
 };
 
-const init = (selector = '.js-gallery') => {
+const init = (selector = ".js-gallery") => {
 	if (!document.querySelector(selector)) {
 		return;
 	}

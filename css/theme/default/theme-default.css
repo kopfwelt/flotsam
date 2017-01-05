@@ -1,19 +1,19 @@
-@import '/theme/default/config/colors.css';
-@import '/theme/default/config/easings.css';
-@import '/theme/default/config/fonts.css';
-@import '/theme/default/config/spacing.css';
-@import '/theme/default/config/breakpoints.css';
+@import "/theme/default/config/colors.css";
+@import "/theme/default/config/easings.css";
+@import "/theme/default/config/fonts.css";
+@import "/theme/default/config/spacing.css";
+@import "/theme/default/config/breakpoints.css";
 
-@import '/theme/default/elements/anchors.css';
-@import '/theme/default/elements/buttons.css';
-@import '/theme/default/elements/defaults.css';
-@import '/theme/default/elements/divider.css';
-/* @import '/theme/default/elements/forms.css';*/
-@import '/theme/default/elements/html.css';
-/*@import '/theme/default/elements/icons.css';*/
-@import '/theme/default/elements/images.css';
-@import '/theme/default/elements/typography.css';
+@import "/theme/default/elements/anchors.css";
+@import "/theme/default/elements/buttons.css";
+@import "/theme/default/elements/defaults.css";
+@import "/theme/default/elements/divider.css";
+/* @import "/theme/default/elements/forms.css";*/
+@import "/theme/default/elements/html.css";
+/*@import "/theme/default/elements/icons.css";*/
+@import "/theme/default/elements/images.css";
+@import "/theme/default/elements/typography.css";
 
-@import '/theme/default/layout/nav.css';
-@import '/theme/default/layout/regions/footer.css';
-@import '/theme/default/layout/regions/header.css';
+@import "/theme/default/layout/nav.css";
+@import "/theme/default/layout/regions/footer.css";
+@import "/theme/default/layout/regions/header.css";

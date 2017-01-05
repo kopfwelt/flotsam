@@ -2,7 +2,7 @@
 	position: relative;
 
 	&::after {
-		content: '';
+		content: "";
 		display: block;
 		height: 0;
 		width: 100%;
@@ -19,7 +19,7 @@
 	height: 100%;
 }
 
-// Deprecated, don't use.
+// Deprecated, don"t use.
 @define-mixin aspect-ratio($width, $height) {
 	@mixin ratio($width, $height);
 }

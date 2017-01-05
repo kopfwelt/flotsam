@@ -1,4 +1,4 @@
-const init = (selector = '.js-bar') => {
+const init = (selector = ".js-bar") => {
 	if (!document.querySelector(selector)) {
 		return;
 	}
