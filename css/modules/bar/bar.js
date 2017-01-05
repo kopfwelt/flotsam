@@ -1,9 +1,9 @@
 const init = (selector = ".js-bar") => {
-	if (!document.querySelector(selector)) {
-		return;
-	}
+  if (!document.querySelector(selector)) {
+    return;
+  }
 
-	bar(selector);
+  bar(selector);
 };
 
 module.exports = init;

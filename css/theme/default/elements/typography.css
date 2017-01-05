@@ -4,141 +4,141 @@
 
 html {
 
-	@mixin font-arial-regular;
-	color: var(--text-color);
-	/*font-feature-settings: "kern" 1;
-	font-kerning: normal;
-	text-rendering: optimizeLegibility;*/
+  @mixin font-arial-regular;
+  color: var(--text-color);
+  /*font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;*/
 }
 
 @define-mixin type-title1 {
 
-	@mixin font-arial-bold;
-	font-size: 22px;
-	letter-spacing: var(--ls1);
-	line-height: 1.1;
-	text-transform: uppercase;
+  @mixin font-arial-bold;
+  font-size: 22px;
+  letter-spacing: var(--ls1);
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 @define-mixin type-title2 {
 
-	@mixin type-title1;
-	@mixin font-arial-regular;
+  @mixin type-title1;
+  @mixin font-arial-regular;
 }
 
 @define-mixin type-title3 {
 
-	@mixin font-arial-bold;
-	font-size: 15px;
+  @mixin font-arial-bold;
+  font-size: 15px;
 }
 
 @define-mixin type-title4 {
 
-	@mixin font-arial-bold;
-	font-size: 12px;
+  @mixin font-arial-bold;
+  font-size: 12px;
 }
 
 @define-mixin type-copy {
 
-	@mixin font-arial-regular;
-	font-size: 14px;
+  @mixin font-arial-regular;
+  font-size: 14px;
 }
 
 @define-mixin type-quote {
 
-	@mixin font-lato;
-	font-size: 25px;
-	line-height: 1.25;
+  @mixin font-lato;
+  font-size: 25px;
+  line-height: 1.25;
 
-	@media (min-width: var(--layout-sm)) {
-		font-size: 40px;
-	}
+  @media (min-width: var(--layout-sm)) {
+    font-size: 40px;
+  }
 }
 
 @define-mixin type-smallCopy {
 
-	@mixin font-arial-regular;
-	font-size: 12px;
-	line-height: 1.25;
+  @mixin font-arial-regular;
+  font-size: 12px;
+  line-height: 1.25;
 }
 
 @define-mixin type-textInput {
 
-	@mixin font-arial-bold;
-	font-size: 12px;
+  @mixin font-arial-bold;
+  font-size: 12px;
 }
 
 @define-mixin type-label {
 
-	@mixin font-arial-regular;
-	font-size: 11px;
+  @mixin font-arial-regular;
+  font-size: 11px;
 }
 
 @define-mixin type-button {
 
-	@mixin font-arial-regular;
-	font-size: 11px;
-	text-transform: uppercase;
+  @mixin font-arial-regular;
+  font-size: 11px;
+  text-transform: uppercase;
 }
 
 @define-mixin type-list {
 
-	@mixin font-arial-regular;
-	font-size: 20px;
-	line-height: 1.5;
+  @mixin font-arial-regular;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .type-title2 {
 
-	@mixin type-title2;
+  @mixin type-title2;
 }
 
 .type-title3 {
 
-	@mixin type-title3;
+  @mixin type-title3;
 }
 
 .type-title4 {
 
-	@mixin type-title4;
+  @mixin type-title4;
 }
 
 .type-navigation {
 
-	@mixin type-copy;
+  @mixin type-copy;
 }
 
 .type-button {
 
-	@mixin type-button;
+  @mixin type-button;
 }
 
 .type-textInput {
 
-	@mixin type-textInput;
+  @mixin type-textInput;
 }
 
 .type-copy {
 
-	@mixin type-copy;
+  @mixin type-copy;
 }
 
 .type-smallCopy {
 
-	@mixin type-smallCopy;
+  @mixin type-smallCopy;
 }
 
 .type-label {
 
-	@mixin type-label;
+  @mixin type-label;
 }
 
 .type-list {
 
-	@mixin type-list;
+  @mixin type-list;
 }
 
 .type-quote {
 
-	@mixin type-quote;
+  @mixin type-quote;
 }

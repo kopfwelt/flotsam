@@ -3,10 +3,10 @@
  */
 
 :root {
-	--layout-s: 414px ;
-	--layout-sm: 660px ;
-	--layout-m: 768px ;
-	--layout-ml: 1024px ;
-	--layout-l: 1280px ;
-	--layout-xl: 1440px ;
+  --layout-s: 414px ;
+  --layout-sm: 660px ;
+  --layout-m: 768px ;
+  --layout-ml: 1024px ;
+  --layout-l: 1280px ;
+  --layout-xl: 1440px ;
 }

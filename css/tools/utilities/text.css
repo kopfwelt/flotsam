@@ -1,5 +1,5 @@
 .u-resetTextTransform {
-	text-transform: none;
+  text-transform: none;
 }
 
 /**
@@ -11,8 +11,8 @@
 
 
 @define-mixin negative-text() {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /**
@@ -29,5 +29,5 @@
 }
 
 .u-hideText {
-	@mixin hide-text();
+  @mixin hide-text();
 }

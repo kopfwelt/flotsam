@@ -3,23 +3,23 @@
  */
 
 @define-mixin positionCenter {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .u-positionCenter {
-	@mixin positionCenter;
+  @mixin positionCenter;
 }
 
 .u-posRelative {
-	position: relative;
+  position: relative;
 }
 
 .u-alignCenter {
-	align-items: center;
+  align-items: center;
 }
 
 .u-justifyCenter {
-	justify-content: center;
+  justify-content: center;
 }

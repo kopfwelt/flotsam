@@ -3,56 +3,56 @@
  */
 
 .SiteFooter {
-	& .Bar {
-		background-color: var(--overlay-bg);
-		min-height: 50px;
+  & .Bar {
+    background-color: var(--overlay-bg);
+    min-height: 50px;
 
-		@media (max-width: var(--layout-m)) {
-			flex-direction: column;
+    @media (max-width: var(--layout-m)) {
+      flex-direction: column;
 
-			& .Bar-item {
-				width: 100%;
-				text-align: center;
-				justify-content: center;
-			}
+      & .Bar-item {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
 
-			& .Bar-item:first-of-type,
-			.Bar-item:last-of-type {
-				margin-bottom: var(--spacing-sm);
-			}
-			& .Nav {
-				flex-direction: column;
-				width: 100%;
-			}
-			& .Nav-item {
-				display: block;
-				padding-bottom: var(--spacing-s);
-				padding-top: var(--spacing-s);
-			}
-		}
+      & .Bar-item:first-of-type,
+      .Bar-item:last-of-type {
+        margin-bottom: var(--spacing-sm);
+      }
+      & .Nav {
+        flex-direction: column;
+        width: 100%;
+      }
+      & .Nav-item {
+        display: block;
+        padding-bottom: var(--spacing-s);
+        padding-top: var(--spacing-s);
+      }
+    }
 
-		@media (min-width: var(--layout-m)) {
-			min-height: 80px;
-		}
-	}
+    @media (min-width: var(--layout-m)) {
+      min-height: 80px;
+    }
+  }
 
-	& .Bar-item,
-	& .Bar--horizontal .Nav-item {
+  & .Bar-item,
+  & .Bar--horizontal .Nav-item {
 
-		@media (min-width: var(--layout-m)) {
-			min-height: 80px;
-		}
-	}
+    @media (min-width: var(--layout-m)) {
+      min-height: 80px;
+    }
+  }
 
-	& .Bar-item:first-of-type {
-		background-color: var(--overlay-bg);
-	}
+  & .Bar-item:first-of-type {
+    background-color: var(--overlay-bg);
+  }
 
-	& .Bar-item:last-of-type {
-		padding-right: var(--spacing-s);
+  & .Bar-item:last-of-type {
+    padding-right: var(--spacing-s);
 
-		@media (min-width: var(--layout-ml)) {
-			padding-right: var(--spacing-sm);
-		}
-	}
+    @media (min-width: var(--layout-ml)) {
+      padding-right: var(--spacing-sm);
+    }
+  }
 }

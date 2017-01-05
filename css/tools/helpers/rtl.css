@@ -2,16 +2,16 @@
  * Left to right
  */
 @define-mixin ltr {
-	[dir="ltr"] & {
-		@content;
-	}
+  [dir="ltr"] & {
+    @content;
+  }
 }
 
 /**
  * Right to left
  */
 @define-mixin rtl {
-	[dir="rtl"] & {
-		@content;
-	}
+  [dir="rtl"] & {
+    @content;
+  }
 }

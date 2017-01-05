@@ -3,7 +3,7 @@
  */
 
 body {
-	margin: 0 ;
+  margin: 0 ;
 }
 
 h1,
@@ -22,8 +22,8 @@ fieldset,
 table,
 address,
 figure {
-	margin-top: 0  ;
-	margin-bottom: var(--spacing-m);
+  margin-top: 0  ;
+  margin-bottom: var(--spacing-m);
 }
 
 iframe,
@@ -32,5 +32,5 @@ canvas,
 video,
 audio,
 embed {
-	max-width: 100% ;
+  max-width: 100% ;
 }

@@ -31,8 +31,8 @@ $all-text-inputs-hover: assign-inputs($text-inputs-list, hover);
 #{$all-text-inputs},
 select,
 label {
-	padding: 1.3em 1.2em 1.35em !default;
-	color: black !default;
+  padding: 1.3em 1.2em 1.35em !default;
+  color: black !default;
 
     transition: border-color .15s !default;
 }
@@ -40,12 +40,12 @@ label {
 // Focus and hover styles for text inputs
 #{$all-text-inputs-focus},
 #{$all-text-inputs-hover} {
-	outline: 0 !default;
+  outline: 0 !default;
 }
 
 // Active styles for text inputs
 #{$all-text-inputs-active} {
-	// border: 1px solid blue !default;
+  // border: 1px solid blue !default;
 }
 
 // Placeholder styles
@@ -53,150 +53,150 @@ input:-moz-placeholder,
 input::-moz-placeholder,
 input:-ms-input-placeholder,
 input::-webkit-input-placeholder {
-	color: black !default;
+  color: black !default;
 }
 
 label span {
-	text-decoration: underline !default;
+  text-decoration: underline !default;
 }
 
 .Form {
-	max-width: rem(400) !default;
-	margin: auto !default;
+  max-width: rem(400) !default;
+  margin: auto !default;
 
-	textarea {
-		border: 1px solid black !default;
-	}
+  textarea {
+    border: 1px solid black !default;
+  }
 
-	.Button {
-		font-size: 13px !default;
-		width: auto !default;
-	}
+  .Button {
+    font-size: 13px !default;
+    width: auto !default;
+  }
 }
 
 .Form > * {
-	margin: 0.7em 0 !default;
+  margin: 0.7em 0 !default;
 }
 
 /* Labels inside Inputs (visually) */
 
 .Form-group {
-	border: 1px solid black !default;
+  border: 1px solid black !default;
 
-	label {
-		padding-right: 0 !default;
-	}
+  label {
+    padding-right: 0 !default;
+  }
 
-	input {
-		border: 0 !default;
-	}
+  input {
+    border: 0 !default;
+  }
 }
 
 .Form-radio {
-	position: relative !default;
-	cursor: pointer !default;
-	display: block !default;
-	padding-left: 3.5em !default;
+  position: relative !default;
+  cursor: pointer !default;
+  display: block !default;
+  padding-left: 3.5em !default;
 
-	input {
-		position: absolute !default;
-		visibility: hidden !default;
-		left: 0 !default;
-		top: 0.6em !default;
-		height: rem(30) !default;
-		cursor: pointer !default;
-		&::before {
-			display: block !default;
-			position: absolute !default;
-			content: "" !default;
-			border-radius: 50% !default;
-			height: rem(30) !default;
-			width: rem(30) !default;
-			border: 2px solid black !default;
+  input {
+    position: absolute !default;
+    visibility: hidden !default;
+    left: 0 !default;
+    top: 0.6em !default;
+    height: rem(30) !default;
+    cursor: pointer !default;
+    &::before {
+      display: block !default;
+      position: absolute !default;
+      content: "" !default;
+      border-radius: 50% !default;
+      height: rem(30) !default;
+      width: rem(30) !default;
+      border: 2px solid black !default;
 
-			visibility: visible !default;
-			margin: auto !default;
-		}
-		&:checked,
-		&:hover {
-			&::after {
-				display: block !default;
-				position: absolute !default;
-				content: "" !default;
-				border-radius: 50% !default;
-				top: rem(5) !default;
-				left: rem(5) !default;
-				height: rem(20) !default;
-				width: rem(20) !default;
-				background-color: black !default;
-				visibility: visible !default;
-			}
-		}
-	}
+      visibility: visible !default;
+      margin: auto !default;
+    }
+    &:checked,
+    &:hover {
+      &::after {
+        display: block !default;
+        position: absolute !default;
+        content: "" !default;
+        border-radius: 50% !default;
+        top: rem(5) !default;
+        left: rem(5) !default;
+        height: rem(20) !default;
+        width: rem(20) !default;
+        background-color: black !default;
+        visibility: visible !default;
+      }
+    }
+  }
 }
 
 .Form-checkbox {
-	position: relative !default;
-	display: block !default;
-	overflow: hidden !default;
-	height: 2em !default;
-	cursor: pointer !default;
+  position: relative !default;
+  display: block !default;
+  overflow: hidden !default;
+  height: 2em !default;
+  cursor: pointer !default;
 
-	.icon-check {
-		position: absolute !default;
-		background-size: 15px !default;
-		background-position: center !default;
-		width: rem(30) !default;
-		height: rem(30) !default;
-		top: 0 !default;
-	}
+  .icon-check {
+    position: absolute !default;
+    background-size: 15px !default;
+    background-position: center !default;
+    width: rem(30) !default;
+    height: rem(30) !default;
+    top: 0 !default;
+  }
 
-	input {
-		position: absolute !default;
-		visibility: hidden !default;
-		cursor: pointer !default;
+  input {
+    position: absolute !default;
+    visibility: hidden !default;
+    cursor: pointer !default;
 
-		&::before {
-			display: block !default;
-			position: absolute !default;
-			content: "" !default;
-			height: rem(30) !default;
-			width: rem(30) !default;
-			border: 2px solid black !default;
-			background: white !default;
-			visibility: visible !default;
-			margin: auto !default;
-			z-index: 2 !default;
-		}
-		&:checked,
-		&:hover {
-			&::before {
-				background: transparent !default;
-			}
-		}
-	}
-	label {
-		left: rem(40) !default;
-		top: rem(7) !default;
-		padding: 0 !default;
-	}
+    &::before {
+      display: block !default;
+      position: absolute !default;
+      content: "" !default;
+      height: rem(30) !default;
+      width: rem(30) !default;
+      border: 2px solid black !default;
+      background: white !default;
+      visibility: visible !default;
+      margin: auto !default;
+      z-index: 2 !default;
+    }
+    &:checked,
+    &:hover {
+      &::before {
+        background: transparent !default;
+      }
+    }
+  }
+  label {
+    left: rem(40) !default;
+    top: rem(7) !default;
+    padding: 0 !default;
+  }
 }
 
 /* Validation */
 
 input,
 textarea {
-	width: 100% !default;
-	&.error,
-	&.parsley-error {
-		box-shadow: 0 0 2px 2px $error-validation !default;
-		border-color: $error-validation !default;
-	}
+  width: 100% !default;
+  &.error,
+  &.parsley-error {
+    box-shadow: 0 0 2px 2px $error-validation !default;
+    border-color: $error-validation !default;
+  }
 }
 
 // Hide the automatically generated error list
 ul.parsley-error-list {
-	display: none !important !default;
+  display: none !important !default;
 }
 
 
@@ -210,28 +210,28 @@ ul.parsley-error-list {
  */
 
 .CustomSelect {
-	border: 0 !default;
-	box-shadow: none !default;
-	outline: 0 !default;
+  border: 0 !default;
+  box-shadow: none !default;
+  outline: 0 !default;
 
-	&:hover,
-	&:focus {
-		border-color: gray !default;
-	}
+  &:hover,
+  &:focus {
+    border-color: gray !default;
+  }
 
-	select {
-		border-color: black !default;
-		border-radius: 0 !default;
-		outline: none !default;
-		background-color: transparent !default;
+  select {
+    border-color: black !default;
+    border-radius: 0 !default;
+    outline: none !default;
+    background-color: transparent !default;
 
-		&:focus {
-			outline: none !default;
-			background-color: transparent !default;
-			color: #222 !default;
-			border-radius: 0 !default;
-		}
-	}
+    &:focus {
+      outline: none !default;
+      background-color: transparent !default;
+      color: #222 !default;
+      border-radius: 0 !default;
+    }
+  }
 }
 
 /**
@@ -241,50 +241,50 @@ ul.parsley-error-list {
 
 // Container used for styling the custom select, the buttom class below adds the bg gradient, corners, etc.
 .CustomSelect {
-	position: relative !default;
-	display: block !default;
-	padding: 0 !default;
+  position: relative !default;
+  display: block !default;
+  padding: 0 !default;
 }
 
 // This is the native select, we"re making everything but the text invisible so we can see the button styles in the wrapper
 .CustomSelect select {
-	width: 100% !default;
-	margin: 0 !default;
-	background: none !default;
-	// border: 1px solid transparent !default;
-	outline: none !default;
-	box-sizing: border-box !default;
-	/* Remove select styling */
-	appearance: none !default;
-	-webkit-appearance: none !default;
+  width: 100% !default;
+  margin: 0 !default;
+  background: none !default;
+  // border: 1px solid transparent !default;
+  outline: none !default;
+  box-sizing: border-box !default;
+  /* Remove select styling */
+  appearance: none !default;
+  -webkit-appearance: none !default;
 }
 
 // Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select.
 .CustomSelect::after {
-	position: absolute !default;
-	content: "" !default;
-	display: inline-block !default;
-	width: rem(40) !default;
-	height: 100% !default;
-	background-color: black !default;
-	background-image: url("data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24.09px" height="24.09px" viewBox="0 0 24.09 24.09" enable-background="new 0 0 24.09 24.09" xml:space="preserve">
+  position: absolute !default;
+  content: "" !default;
+  display: inline-block !default;
+  width: rem(40) !default;
+  height: 100% !default;
+  background-color: black !default;
+  background-image: url("data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="24.09px" height="24.09px" viewBox="0 0 24.09 24.09" enable-background="new 0 0 24.09 24.09" xml:space="preserve">
 <polygon fill="#FFFFFF" points="24.102,7.162 12.045,19.219 -0.011,7.162 2.3,4.873 12.045,14.609 21.801,4.873 "/>
 </svg>
 ") !default;
-	background-size: 20px !default;
-	background-position: center !default;
-	background-repeat: no-repeat !default;
-	top: 0 !default;
-	right: 0 !default;
-	z-index: 2 !default;
-	// This hack make the select behind the arrow clickable in some browsers
-	pointer-events: none !default;
+  background-size: 20px !default;
+  background-position: center !default;
+  background-repeat: no-repeat !default;
+  top: 0 !default;
+  right: 0 !default;
+  z-index: 2 !default;
+  // This hack make the select behind the arrow clickable in some browsers
+  pointer-events: none !default;
 }
 
 // Make sure options have normal weight
 .CustomSelect option {
-	font-weight: normal !default;
+  font-weight: normal !default;
 }
 
 
@@ -297,40 +297,40 @@ ul.parsley-error-list {
 /* OPERA - Pre-Blink nix the custom arrow, go with a native select button to keep it simple. Targeted via this hack http://browserhacks.com/#hack-a3f166304aafed524566bc6814e1d5c7 */
 x:-o-prefocus,
 .CustomSelect::after {
-	display: none !default;
+  display: none !default;
 }
 
 /* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance, IE 9 and earlier get a native select - targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
 /* The second rule removes the odd blue bg color behind the text in the select button in IE 10/11 and sets the text color to match the focus style"s - fix via http://stackoverflow.com/questions/17553300/change-ie-background-color-on-unopened-focused-select-box */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.CustomSelect select::-ms-expand {
-		display: none !default;
-	}
-	.CustomSelect select:focus::-ms-value {
-		background: transparent !default;
-		color: #222 !default;
-	}
+  .CustomSelect select::-ms-expand {
+    display: none !default;
+  }
+  .CustomSelect select:focus::-ms-value {
+    background: transparent !default;
+    color: #222 !default;
+  }
 }
 
 
 /* FIREFOX won"t let us hide the native select arrow, so we have to make it wider than needed and clip it via overflow on the parent container. The percentage width is a fallback since FF 4+ supports calc() so we can just add a fixed amount of extra width to push the native arrow out of view. We"re applying this hack across all FF versions because all the previous hacks were too fragile and complex. You might want to consider not using this hack and using the native select arrow in FF. Note this makes the menus wider than the select button because they display at the specified width and aren"t clipped. Targeting hack via http://browserhacks.com/#hack-758bff81c5c32351b02e10480b5ed48e */
 /* Show only the native arrow */
 @-moz-document url-prefix() {
-	.CustomSelect {
-		overflow: hidden !default;
-	}
-	.CustomSelect select {
-	// it make the select bug in firefox
-	// 	width: 120% !default;
-	// width: -moz-calc(100% + 3em) !default;
-	// 	width: calc(100% + 3em) !default;
-	}
+  .CustomSelect {
+    overflow: hidden !default;
+  }
+  .CustomSelect select {
+  // it make the select bug in firefox
+  //   width: 120% !default;
+  // width: -moz-calc(100% + 3em) !default;
+  //   width: calc(100% + 3em) !default;
+  }
 }
 
 /* Firefox focus has odd artifacts around the text, this kills that. See https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring */
 .CustomSelect select:-moz-focusring {
-	color: transparent !default;
-	text-shadow: 0 0 0 #000 !default;
+  color: transparent !default;
+  text-shadow: 0 0 0 #000 !default;
 }
 
 

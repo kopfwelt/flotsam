@@ -6,52 +6,52 @@
 
 
 @define-mixin font-arial-regular {
-	font-family: "arial", sans-serif;
-	font-weight: 400 ;
+  font-family: "arial", sans-serif;
+  font-weight: 400 ;
 }
 
 @define-mixin font-arial-bold {
-	font-family: "arial", sans-serif;
-	font-weight: 700 ;
+  font-family: "arial", sans-serif;
+  font-weight: 700 ;
 }
 
 @define-mixin font-lato {
-	font-family: "Lato" ;
-	font-style: normal ;
-	font-weight: 700 ;
+  font-family: "Lato" ;
+  font-style: normal ;
+  font-weight: 700 ;
 }
 
 
 
 :root {
-	/**
-	 * Root sizes
-	 */
-	--root-font-size: 15px ;
-	--root-line-height: 1.3125 ;
+  /**
+   * Root sizes
+   */
+  --root-font-size: 15px ;
+  --root-line-height: 1.3125 ;
 
 
-	/**
-	 * font sizes
-	 */
-	--font-11: 11px ;
-	--font-12: 12px ;
-	--font-14: 14px ;
-	--font-15: 15px ;
-	--font-16: 16px ;
-	--font-18: 18px ;
-	--font-20: 20px ;
-	--font-22: 22px ;
-	--font-25: 25px ;
-	--font-30: 30px ;
-	--font-40: 40px ;
-	--font-60: 60px ;
+  /**
+   * font sizes
+   */
+  --font-11: 11px ;
+  --font-12: 12px ;
+  --font-14: 14px ;
+  --font-15: 15px ;
+  --font-16: 16px ;
+  --font-18: 18px ;
+  --font-20: 20px ;
+  --font-22: 22px ;
+  --font-25: 25px ;
+  --font-30: 30px ;
+  --font-40: 40px ;
+  --font-60: 60px ;
 
-	/**
-	 * Line he sizes
-	 */
-	--ls0: 0.025em ;
-	--ls1: 0.05em ;
-	--ls2: 0.1em ;
+  /**
+   * Line he sizes
+   */
+  --ls0: 0.025em ;
+  --ls1: 0.05em ;
+  --ls2: 0.1em ;
 
 }

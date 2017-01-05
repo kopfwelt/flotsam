@@ -2,95 +2,95 @@
  * Icons
  */
 :root {
-	--icon-size: 20px;
-	--space: 30px;
-	--icon-spacing-horizontal-small: var(--space)/3;
-	--icon-spacing-horizontal: var(--space)/1.5;
-	--icon-spacing-vertical-small: 7.5px;
-	--icon-spacing-vertical: var(--space)/2;
+  --icon-size: 20px;
+  --space: 30px;
+  --icon-spacing-horizontal-small: var(--space)/3;
+  --icon-spacing-horizontal: var(--space)/1.5;
+  --icon-spacing-vertical-small: 7.5px;
+  --icon-spacing-vertical: var(--space)/2;
 }
 
 svg {
-	max-height: 100%;
+  max-height: 100%;
 }
 
 [class^="icon-"],
 [class*=" icon-"] {
-	display: inline-block;
-	background-position: 0 0;
-	background-repeat: no-repeat;
-	background-size: contain;
-	fill: currentColor;
-	width: 20px;
-	height: 20px;
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
 
-	svg {
-		width: 100%;
-		height: 100%;
-	}
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 
 .Icon {
-	display: flex;
+  display: flex;
 }
 .Icon i {
-	flex-shrink: 0;
-	width: 30px;
-	height: 30px;
-	background-size: 30px 30px;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
 
-	@media (min-width: var(--layout-m)) {
-		width: 40px;
-		height: 40px;
-		background-size: 40px 40px;
-	}
+  @media (min-width: var(--layout-m)) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+  }
 
-	@media (min-width: var(--layout-l) {
-		width: 50px;
-		height: 50px;
-		background-size: 50px 50px;
-	}
+  @media (min-width: var(--layout-l) {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+  }
 }
 .Icon-text {
-	display: inline-block;
-	align-self: center;
-	margin-left: var(--icon-spacing-horizontal-small);
-	text-align: left;
-	z-index: 1;
-	@media (min-width: var(--layout-m)) {
-		margin-left: var(--icon-spacing-horizontal);
-	}
+  display: inline-block;
+  align-self: center;
+  margin-left: var(--icon-spacing-horizontal-small);
+  text-align: left;
+  z-index: 1;
+  @media (min-width: var(--layout-m)) {
+    margin-left: var(--icon-spacing-horizontal);
+  }
 }
 .Icon--underneath {
-	flex-direction: column;
-	i {
-		margin: auto;
-	}
+  flex-direction: column;
+  i {
+    margin: auto;
+  }
 }
 .Icon--reverse {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 .Icon-text--reverse {
-	order: -1;
-	text-align: right;
-	margin-left: 0;
-	margin-right: var(--icon-spacing-horizontal-small);
-	@media (min-width: var(--layout-m)) {
-		margin-left: 0;
-		margin-right: var(--icon-spacing-horizonta);
-	}
+  order: -1;
+  text-align: right;
+  margin-left: 0;
+  margin-right: var(--icon-spacing-horizontal-small);
+  @media (min-width: var(--layout-m)) {
+    margin-left: 0;
+    margin-right: var(--icon-spacing-horizonta);
+  }
 }
 .Icon-text--underneath {
-	text-align: center;
-	margin-top: var(--icon-spacing-vertical-small);
-	margin-left: auto;
-	margin-right: auto;
-	@media (min-width: var(--layout-m)) {
-		margin-top: var(--icon-spacing-vertical);
-	}
+  text-align: center;
+  margin-top: var(--icon-spacing-vertical-small);
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: var(--layout-m)) {
+    margin-top: var(--icon-spacing-vertical);
+  }
 }
 
 .Icon-text--gray {
-	color: gray;
+  color: gray;
 }

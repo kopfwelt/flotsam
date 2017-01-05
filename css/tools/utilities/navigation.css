@@ -3,23 +3,23 @@
  */
 
 @define-mixin navHorizontal {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-	* > {
-		display: inline-block;
-	}
+  * > {
+    display: inline-block;
+  }
 }
 
 @define-mixin navVertical {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: no-wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
 
-	* > {
-		display: block;
-	}
+  * > {
+    display: block;
+  }
 }
 
 // @define-mixin navItem? - thought the styles were too specific (Kimberly)
