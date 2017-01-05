@@ -1,3 +1,3 @@
-const plugins = ['postcss-mixins', 'postcss-conditionals', 'postcss-each', 'postcss-for', 'postcss-calc', 'cssnext'];
+const plugins = ['postcss-nested', 'postcss-mixins', 'postcss-conditionals', 'postcss-each', 'postcss-for', 'postcss-calc', 'cssnext'];
 
 module.exports = {plugins};

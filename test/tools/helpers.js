@@ -1,11 +1,8 @@
 import fs from 'fs';
 import pify from 'pify';
-import postcss from 'postcss';
+import preprocessor from 'suitcss-preprocessor';
 import {plugins} from '../helpers/config';
 import test from 'ava';
-
-// postcss plugins
-import preprocessor from 'suitcss-preprocessor';
 
 test('animations.css should provide a working mixin', async t => {
     let css = await pify(fs.readFile)('./css/tools/helpers/animations.css', 'utf8');
@@ -13,15 +10,8 @@ test('animations.css should provide a working mixin', async t => {
 
     // use mixin
     css = `${css}
-.default {
-
-  @mixin iterative-delay;
-}
-
-.parameter {
-
-  @mixin iterative-delay 4, 0.2s;
-}
+@mixin iterative-delay .default;
+@mixin iterative-delay .parameter, 4, 0.2s;
 `;
     
     const result = await preprocessor(css, {
@@ -30,5 +20,5 @@ test('animations.css should provide a working mixin', async t => {
       use: plugins
     });
 
-    t.is(result.css, fixture);
+    t.deepEqual(result.css, fixture);
 });
