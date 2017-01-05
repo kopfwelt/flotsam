@@ -1,0 +1,6 @@
+{
+  "name": "Kern",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./kern.css"
+}
