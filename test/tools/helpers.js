@@ -1,7 +1,7 @@
 import fs from 'fs';
 import pify from 'pify';
 import postcss from 'postcss';
-// import {plugins} from '../helpers/config';
+import {plugins} from '../helpers/config';
 import test from 'ava';
 
 // postcss plugins
@@ -13,17 +13,22 @@ test('animations.css should provide a working mixin', async t => {
 
     // use mixin
     css = `${css}
-.test {
+.default {
 
   @mixin iterative-delay;
+}
+
+.parameter {
+
+  @mixin iterative-delay 4, 0.2s;
 }
 `;
     
     const result = await preprocessor(css, {
-		root: './css/tools/helpers/animations.css',
-		minify: true,
-		use: ['postcss-mixins', 'postcss-conditionals', 'postcss-each', 'postcss-for', 'postcss-calc', 'cssnext']
-    }, './css/kern.css');
+      root: './css/tools/helpers/animations.css',
+      minify: true,
+      use: plugins
+    });
 
     t.is(result.css, fixture);
 });
