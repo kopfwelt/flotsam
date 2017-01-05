@@ -3,58 +3,56 @@
  */
 
 .SiteFooter {
-	.Bar {
-		background-color: $cool-gray;
-		min-height: rem(50);
+	& .Bar {
+		background-color: var(--overlay-bg);
+		min-height: 50px;
 
-		@media (max-width: $layout-m) {
+		@media (max-width: var(--layout-m)) {
 			flex-direction: column;
 
-			.Bar-item {
+			& .Bar-item {
 				width: 100%;
 				text-align: center;
 				justify-content: center;
 			}
 
-			.Bar-item:first-of-type,
+			& .Bar-item:first-of-type,
 			.Bar-item:last-of-type {
-				margin-bottom: $spacing-sm;
+				margin-bottom: var(--spacing-sm);
 			}
-			.Nav {
+			& .Nav {
 				flex-direction: column;
 				width: 100%;
 			}
-			.Nav-item {
+			& .Nav-item {
 				display: block;
-				padding-bottom: $spacing-s;
-				padding-top: $spacing-s;
+				padding-bottom: var(--spacing-s);
+				padding-top: var(--spacing-s);
 			}
 		}
-		@media (min-width: $layout-m) {
-			min-height: rem(80);
+
+		@media (min-width: var(--layout-m)) {
+			min-height: 80px;
 		}
 	}
 
-	.Bar-item,
-	.Bar--horizontal .Nav-item {
-		// min-height: rem(30);
+	& .Bar-item,
+	& .Bar--horizontal .Nav-item {
 
-		@media (min-width: $layout-m) {
-			min-height: rem(80);
+		@media (min-width: var(--layout-m)) {
+			min-height: 80px;
 		}
 	}
 
-	.Bar-item:first-of-type {
-		background-color: $light-gray;
+	& .Bar-item:first-of-type {
+		background-color: var(--overlay-bg);
 	}
 
-	.Bar-item:last-of-type {
-		padding-right: $spacing-s;
-		@mixin font-arial-bold;
+	& .Bar-item:last-of-type {
+		padding-right: var(--spacing-s);
 
-		@media (min-width: $layout-ml) {
-			padding-right: $spacing-sm;
+		@media (min-width: var(--layout-ml)) {
+			padding-right: var(--spacing-sm);
 		}
 	}
 }
-

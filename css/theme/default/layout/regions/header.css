@@ -6,36 +6,37 @@
 	@mixin font-arial-bold;
 
 	.Bar {
-		font-size: rem(14);
-		// background-color: $pale-gray;
+		font-size: 14px;
 		z-index: 20;
-		min-height: rem(50);
+		min-height: 50px;
 	}
 
 	.Bar--horizontal {
 		.Bar-item:first-of-type {
-			padding-left: $spacing-s;
-			@media (min-width: $layout-ml) {
-				padding-left: $spacing-m;
+			padding-left: var(--spacing-s);
+
+			@media (min-width: var(--layout-ml)) {
+				padding-left: var(--spacing-m);
 			}
 		}
 	}
 
 	.Bar-item,
 	.Bar--horizontal .Nav-item {
-		height: rem(50);
+		height: 50px;
 	}
 
 	.Bar-item--center {
 		display: none;
-		@media (min-width: $layout-sm) {
+
+		@media (min-width: var(--layout-sm)) {
 			display: block;
 			display: flex;
 		}
 	}
 
 	.Bar-item:last-of-type {
-		padding-right: $spacing-s;
+		padding-right: var(--spacing-s);
 		.icon-cart-new,
 		.icon-search-btn {
 			height: 27px;
@@ -45,8 +46,8 @@
 			height: 27px;
 			width: 19px;
 		}
-		@media (min-width: $layout-ml) {
-			padding-right: $spacing-sm;
+		@media (min-width: var(--layout-ml)) {
+			padding-right: var(--spacing-sm);
 		}
 	}
 
@@ -54,32 +55,33 @@
 		display: flex;
 		margin-bottom: 0;
 		i {
-			width: rem(115);
-			height: rem(30);
+			width: 115px;
+			height: 30px;
 		}
 	}
 
 }
 .SiteHeader--big {
 	.Bar {
-		font-size: rem(18);
-		min-height: rem(50);
-		@media (min-width: $layout-sm) {
-			min-height: rem(78);
+		font-size: 18px;
+		min-height: 50px;
+
+		@media (min-width: var(--layout-sm)) {
+			min-height: 78px;
 		}
 	}
 
 	.Bar-item,
 	.Bar--horizontal .Nav-item {
-		height: rem(50);
+		height: 50px;
 
-		@media (min-width: $layout-sm) {
-			height: rem(78);
+		@media (min-width: var(--layout-sm)) {
+			height: 78px;
 		}
 	}
 
 	.Bar-item:last-of-type {
-		padding-right: $spacing-s;
+		padding-right: var(--spacing-s);
 
 		.icon-cart-new,
 		.icon-search-btn {
@@ -90,15 +92,16 @@
 			height: 34px;
 			width: 24px;
 		}
-		@media (min-width: $layout-ml) {
-			padding-right: $spacing-sm;
+
+		@media (min-width: var(--layout-ml)) {
+			padding-right: var(--spacing-sm);
 		}
 	}
 
 	.Logo {
 		i {
-			width: rem(130);
-			height: rem(40);
+			width: 130px;
+			height: 40px;
 		}
 	}
 }
