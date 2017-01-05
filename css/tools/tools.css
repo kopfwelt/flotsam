@@ -2,9 +2,8 @@
  * import helpers
  */
 
-@import "./helpers/animations.css";
-
 /*
+@import "./helpers/animations.css";
 @import "./helpers/colors.css";
 @import "./helpers/units.css";
 @import "./helpers/rtl.css";
@@ -16,7 +15,10 @@
  * import utilities
  */
 
+/*
 @import "./utilities/clearfix.css";
+*/
+
 @import "./utilities/flex.css";
 
 /*

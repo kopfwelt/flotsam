@@ -8,15 +8,14 @@ import test from 'ava';
 import preprocessor from 'suitcss-preprocessor';
 
 test('Testing Kern framework', async t => {
-  t.pass();
-    // const css = await pify(fs.readFile)('./css/kern.css', 'utf8');
-    // const fixture = await pify(fs.readFile)('./test/fixtures/kern.css', 'utf8');
+    const css = await pify(fs.readFile)('./css/kern.css', 'utf8');
+    const fixture = await pify(fs.readFile)('./test/fixtures/kern.css', 'utf8');
     
-    // const result = await preprocessor(css, {
-    //   root: './css/kern.css',
-    //   minify: true,
-    //   use: plugins
-    // });
+    const result = await preprocessor(css, {
+      root: './css',
+      minify: true,
+      use: plugins
+    });
 
-    // t.is(result.css, fixture);
+    t.is(result.css, fixture);
 });

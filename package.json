@@ -5,6 +5,7 @@
   "main": "index.scss",
   "scripts": {
     "test": "ava",
+    "watch": "npm test -- --watch",
     "docset": "node docset.js && cd docset && tar --exclude='.DS_Store' -cvzf kern.tgz kern.docset && cd .. && shipit production docset"
   },
   "repository": {

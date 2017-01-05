@@ -15,7 +15,7 @@ test('animations.css should provide a working mixin', async t => {
 `;
     
     const result = await preprocessor(css, {
-      root: './css/tools/helpers/animations.css',
+      root: './css',
       minify: true,
       use: plugins
     });
