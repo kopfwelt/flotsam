@@ -4,12 +4,12 @@
 
 
 html {
+	@mixin font-arial-regular;
+	
 	color: var(--text-color) ;
 	text-rendering: optimizeLegibility ;
 	font-feature-settings: "kern" 1 ;
 	font-kerning: normal ;
-
-	@mixin font-arial-regular;
 }
 
 @define-mixin type-title1 {
@@ -18,7 +18,6 @@ html {
 	line-height: 1.1 ;
 	text-transform: uppercase ;
 	letter-spacing: var(--ls1) ;
-	margin-bottom: var(--spacing-s) ;
 }
 
 @define-mixin type-title2 {
@@ -55,7 +54,6 @@ html {
 	@mixin font-arial-regular;
 	font-size: 12px ;
 	line-height: 1.25 ;
-	// margin-bottom: var(--spacing-sm);
 }
 
 @define-mixin type-textInput {
