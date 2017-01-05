@@ -3,15 +3,17 @@
  */
 
 .SiteHeader {
+
   @mixin font-arial-bold;
 
   .Bar {
     font-size: 14px;
-    z-index: 20;
     min-height: 50px;
+    z-index: 20;
   }
 
   .Bar--horizontal {
+
     .Bar-item:first-of-type {
       padding-left: var(--spacing-s);
 
@@ -37,15 +39,18 @@
 
   .Bar-item:last-of-type {
     padding-right: var(--spacing-s);
+
     .icon-cart-new,
     .icon-search-btn {
       height: 27px;
       width: 27px;
     }
+
     .icon-retailer-available {
       height: 27px;
       width: 19px;
     }
+
     @media (min-width: var(--layout-ml)) {
       padding-right: var(--spacing-sm);
     }
@@ -54,14 +59,17 @@
   .Logo {
     display: flex;
     margin-bottom: 0;
+
     i {
-      width: 115px;
       height: 30px;
+      width: 115px;
     }
   }
 
 }
+
 .SiteHeader--big {
+
   .Bar {
     font-size: 18px;
     min-height: 50px;
@@ -88,6 +96,7 @@
       height: 34px;
       width: 34px;
     }
+
     .icon-retailer-available {
       height: 34px;
       width: 24px;
@@ -99,9 +108,10 @@
   }
 
   .Logo {
+
     i {
-      width: 130px;
       height: 40px;
+      width: 130px;
     }
   }
 }

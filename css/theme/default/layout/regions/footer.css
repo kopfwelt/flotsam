@@ -3,6 +3,7 @@
  */
 
 .SiteFooter {
+
   & .Bar {
     background-color: var(--overlay-bg);
     min-height: 50px;
@@ -11,19 +12,21 @@
       flex-direction: column;
 
       & .Bar-item {
-        width: 100%;
-        text-align: center;
         justify-content: center;
+        text-align: center;
+        width: 100%;
       }
 
       & .Bar-item:first-of-type,
       .Bar-item:last-of-type {
         margin-bottom: var(--spacing-sm);
       }
+
       & .Nav {
         flex-direction: column;
         width: 100%;
       }
+
       & .Nav-item {
         display: block;
         padding-bottom: var(--spacing-s);

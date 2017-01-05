@@ -10,6 +10,6 @@
   --text-color: black;
   --overlay-bg: gray;
   --error-validation: red;
-  --white: #ffffff;
-  --black: #000000;
+  --white: #fff;
+  --black: #000;
 }
