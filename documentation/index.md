@@ -23,43 +23,43 @@ In your main css file:
 
 ```
 
-_kern.scss
-components/
-  burger/
-    _burger.scss
-    burger.hbs
-  modal/
-    _magnificpopup.scss
-modules/
-theme/
-tools/
+├── kern.css                      # →
+├── components/                   # →
+│   ├── burger/                   # →
+│   ├── burger.css                # →
+│   ├── burger.hbs                # →
+│   └── modal/                    # →
+│       └── magnificpopup.css     # →
+├── modules/                      # →
+├── theme/                        # →
+└── tools/                        # →
 ```
 ### Theme
 
 ```
-_config.scss
-_elements.scss
-_layout.scss
-_theme-default.scss
-config/
-  _breakpoints.scss
-  _colors.scss
-  _easings.scss
-  _fonts.scss
-  _spacing.scss
-elements/
-  _anchors.scss
-  _buttons.scss
-  _defaults.scss
-  _divider.scss
-  _forms.scss
-  _html.scss
-  _icons.scss
-  _images.scss
-  _typography.scss
-layout/
-  _nav.scss
-  regions/
-    _footer.scss
-    _header.scss
+├── config.css                    # →
+├── elements.css                  # →
+├── layout.css                    # →
+├── theme-default.css             # →
+├── config/                       # →
+│   ├── breakpoints.css           # →
+│   ├── colors.css                # →
+│   ├── easings.css               # →
+│   ├── fonts.css                 # →
+│   └── spacing.css               # →
+├── elements/                     # →
+│   ├── anchors.css               # →
+│   ├── buttons.css               # →
+│   ├── defaults.css              # →
+│   ├── divider.css               # →
+│   ├── forms.css                 # →
+│   ├── html.css                  # →
+│   ├── icons.css                 # →
+│   ├── images.css                # →
+│   └── typography.css            # →
+└── layout/                       # →
+    ├── nav.css                   # →
+    └── regions/                  # →
+        ├── footer.css            # →
+        └── header.css            # →
 ```
