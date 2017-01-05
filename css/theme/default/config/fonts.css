@@ -4,28 +4,17 @@
  * Webfonts we are using
  */
 
-/**
- * Nimbus sans extended
- *   regular
- */
+
 @define-mixin font-arial-regular {
 	font-family: "arial", sans-serif;
 	font-weight: 400 ;
 }
 
-/**
- * Nimbus sans extended
- *   bold
- */
 @define-mixin font-arial-bold {
 	font-family: "arial", sans-serif;
 	font-weight: 700 ;
 }
 
-/**
- * Didot
- *   light italic
- */
 @define-mixin font-lato {
 	font-family: "Lato" ;
 	font-style: normal ;
