@@ -1,13 +1,14 @@
 /**
  * Text truncate
  */
-
-@define-mixin text-truncate() {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+:root {
+  --text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 .u-textTruncate {
-  @mixin text-truncate;
+  @apply --text-truncate;
 }
