@@ -1,33 +1,22 @@
+:root {
+  --negative-text {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  --hide-text {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+  }
+}
+
+
 .u-resetTextTransform {
   text-transform: none;
 }
 
-/**
- * Negative text
- * use this for whitish text on blackish backgrounds
- *
- * it will make type appear lighter but it also DISABLED subpixel antialiasing which isn"t always good
- */
-
-
-@define-mixin negative-text() {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/**
- * Hides the text in an element, commonly used to show an image. Some elements will need
- * block-level styles applied.
- * @link http://zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement
- */
-
-
-@define-mixin hide-text {
-  overflow: hidden;
-  text-indent: 101%;
-  white-space: nowrap;
-}
-
 .u-hideText {
-  @mixin hide-text();
+
+  @apply --hide-text;
 }

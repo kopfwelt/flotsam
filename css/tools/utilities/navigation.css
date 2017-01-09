@@ -1,25 +1,24 @@
 /**
  * Predefined navigation mixins
  */
-
-@define-mixin navHorizontal {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  * > {
-    display: inline-block;
+:root {
+  --navHorizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    & * > {
+      display: inline-block;
+    }
   }
-}
 
-@define-mixin navVertical {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-
-  * > {
-    display: block;
+  --navVertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    & * > {
+      display: block;
+    }
   }
-}
 
-// @define-mixin navItem? - thought the styles were too specific (Kimberly)
+
+}

@@ -13,7 +13,7 @@
 
 .u-positionCenter {
 
-  @apply positionCenter;
+  @apply --positionCenter;
 }
 
 .u-posRelative {
