@@ -10,7 +10,7 @@
 		display: none;
 	}
 	& i {
-		transition: transform 300ms var(--easing2);
+		transition: transform 300ms var(--easing);
 	}
 }
 
@@ -18,11 +18,11 @@
   & dd {
     width: 100%;
     opacity: 1;
-    transition: opacity 300ms var(--easing2);
+    transition: opacity 300ms var(--easing);
     display: block;
   }
   & i {
     transform: rotate(180deg);
-    transition: transform 300ms var(--easing2);
+    transition: transform 300ms var(--easing);
   }
 }
