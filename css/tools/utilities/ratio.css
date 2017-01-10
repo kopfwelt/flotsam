@@ -1,4 +1,4 @@
-@define-mixin ratio($width, $height) {
+@define-mixin ratio $ratioWidth: 16, $ratioHeight: 9 {
   position: relative;
 
   &::after {
@@ -6,8 +6,8 @@
     display: block;
     height: 0;
     width: 100%;
-    // 16:9 = 56.25% = calc(9 / 16 * 100%)
-    padding-top: ($height / $width) * 100%;
+    padding-top: calc($ratioWidth / $ratioHeight * 100%);
+    transition-delay: calc(100px - 20px);
   }
 }
 
@@ -17,39 +17,4 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-// Deprecated, don"t use.
-@define-mixin aspect-ratio($width, $height) {
-  @mixin ratio($width, $height);
-}
-@define-mixin aspect-ratio-inner {
-  @mixin ratio-inner;
-}
-
-
-.Ratio,
-.Ratio--16-9 {
-  @mixin aspect-ratio(16, 9);
-}
-.Ratio--16-18 {
-  @mixin aspect-ratio(16, 18);
-}
-.Ratio--32-9 {
-  @mixin aspect-ratio(32, 9);
-}
-.Ratio--4-3 {
-  @mixin aspect-ratio(4, 3);
-}
-.Ratio--1-2 {
-  @mixin aspect-ratio(1, 2);
-}
-.Ratio--2-1 {
-  @mixin aspect-ratio(2, 1);
-}
-.Ratio--1-1 {
-  @mixin aspect-ratio(1, 1);
-}
-.Ratio-inner {
-  @mixin aspect-ratio-inner;
 }
