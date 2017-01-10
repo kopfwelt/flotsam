@@ -40,6 +40,5 @@
     "postcss-nested": "^1.0.0",
     "showdown": "^1.5.5",
     "suitcss-preprocessor": "^3.0.1"
-  },
-  "dependencies": {}
+  }
 }
