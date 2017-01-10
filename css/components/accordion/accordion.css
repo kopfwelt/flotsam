@@ -1,0 +1,28 @@
+.Accordion-child {
+	cursor: pointer;
+	margin: 0;
+	position: relative;
+
+	& dd {
+		max-height: 0;
+		opacity: 0;
+		margin: 0;
+		display: none;
+	}
+	& i {
+		transition: transform 300ms var(--easing2);
+	}
+}
+
+.Accordion-child.is-active {
+  dd {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 300ms var(--easing2);
+    display: block;
+  }
+  i {
+    transform: rotate(180deg);
+    transition: transform 300ms var(--easing2);
+  }
+}
