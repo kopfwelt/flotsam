@@ -3,7 +3,7 @@
  */
 @define-mixin ltr {
   [dir="ltr"] & {
-    @content;
+    @mixin-content;
   }
 }
 
@@ -12,6 +12,6 @@
  */
 @define-mixin rtl {
   [dir="rtl"] & {
-    @content;
+    @mixin-content;
   }
 }

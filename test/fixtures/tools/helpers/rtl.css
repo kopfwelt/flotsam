@@ -1,0 +1,12 @@
+/**
+ * Left to right
+ */
+/**
+ * Right to left
+ */
+.TestClass {
+  margin: 0 0 0 20px;
+}
+[dir="rtl"] .TestClass {
+  margin: 0 20px 0 0;
+}
