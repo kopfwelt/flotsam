@@ -1,8 +1,11 @@
 /**
  * Left to right
  */
+
 @define-mixin ltr {
+
   [dir="ltr"] & {
+
     @mixin-content;
   }
 }
@@ -10,8 +13,11 @@
 /**
  * Right to left
  */
+
 @define-mixin rtl {
+
   [dir="rtl"] & {
+
     @mixin-content;
   }
 }

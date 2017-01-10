@@ -5,7 +5,7 @@
   "main": "index.css",
   "scripts": {
     "test": "ava",
-    "watch": "npm test -- --watch",
+    "watch": "ava --watch",
     "docset": "node docset.js && cd docset && tar --exclude='.DS_Store' -cvzf kern.tgz kern.docset && cd .. && shipit production docset"
   },
   "repository": {
@@ -40,5 +40,11 @@
     "postcss-nested": "^1.0.0",
     "showdown": "^1.5.5",
     "suitcss-preprocessor": "^3.0.1"
+  },
+  "ava": {
+    "require": ["babel-register"]
+  },
+  "babel": {
+    "presets": ["es2015-node4", "stage-2"]
   }
 }

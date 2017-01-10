@@ -2,16 +2,13 @@
  * import helpers
  */
 
-
 @import "./helpers/animations.css";
 @import "./helpers/colors.css";
 @import "./helpers/rtl.css";
 
-
 /**
  * import utilities
  */
-
 
 @import "./utilities/flex.css";
 @import "./utilities/ratio.css";
