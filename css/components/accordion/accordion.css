@@ -15,13 +15,13 @@
 }
 
 .Accordion-child.is-active {
-  dd {
+  & dd {
     width: 100%;
     opacity: 1;
     transition: opacity 300ms var(--easing2);
     display: block;
   }
-  i {
+  & i {
     transform: rotate(180deg);
     transition: transform 300ms var(--easing2);
   }
