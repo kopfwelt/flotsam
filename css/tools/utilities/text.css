@@ -11,12 +11,10 @@
   }
 }
 
-
 .u-resetTextTransform {
   text-transform: none;
 }
 
 .u-hideText {
-
   @apply --hide-text;
 }

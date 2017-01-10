@@ -1,13 +1,10 @@
 /**
  * Grids with flexbox
  */
-
-
 .Grid {
   display: flex;
   flex-flow: row wrap;
 }
-
 .Grid--alignCenter {
   justify-content: center;
 }
@@ -30,15 +27,11 @@
 .Grid--nowrap {
   flex-wrap: nowrap;
 }
-
-
 .Grid-img {
   img {
     width: 100%
   }
 }
-
-
 
 @media (--layout-xl) {
 
@@ -190,5 +183,4 @@
   .u-xl-hide {
     display: none;
   }
-
 }
