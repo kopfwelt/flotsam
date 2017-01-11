@@ -4,8 +4,8 @@
   "description": "A basic framework using SUIT CSS naming convention",
   "main": "index.css",
   "scripts": {
-    "test": "ava",
-    "watch": "ava --watch",
+    "test": "ava --verbose",
+    "watch": "ava --verbose --watch",
     "docset": "node docset.js && cd docset && tar --exclude='.DS_Store' -cvzf kern.tgz kern.docset && cd .. && shipit production docset"
   },
   "repository": {
