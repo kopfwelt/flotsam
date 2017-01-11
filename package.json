@@ -4,8 +4,8 @@
   "description": "A basic framework using SUIT CSS naming convention",
   "main": "index.css",
   "scripts": {
-    "test": "ava",
-    "watch": "npm test -- --watch",
+    "test": "ava --verbose",
+    "watch": "ava --verbose --watch",
     "docset": "node docset.js && cd docset && tar --exclude='.DS_Store' -cvzf kern.tgz kern.docset && cd .. && shipit production docset"
   },
   "repository": {
@@ -42,5 +42,10 @@
     "showdown": "^1.5.5",
     "suitcss-preprocessor": "^3.0.1"
   },
-  "dependencies": {}
+  "ava": {
+    "require": ["babel-register"]
+  },
+  "babel": {
+    "presets": ["es2015-node4", "stage-2"]
+  }
 }
