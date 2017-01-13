@@ -1,0 +1,24 @@
+/* Using transition when using display: none; doesn't work
+ * Workaround with max-height. Should be tested.
+ */
+
+.Collapse-child {
+	cursor: pointer;
+	margin: 0;
+	position: relative;
+
+	& dd {
+    max-height: 0;
+		opacity: 0;
+		margin: 0;
+    transition: opacity 300ms var(--easing);
+	}
+}
+
+.Collapse-child.is-active {
+  & dd {
+    max-height: none;
+    width: 100%;
+    opacity: 1;
+  }
+}
