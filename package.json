@@ -2,7 +2,7 @@
   "name": "kern",
   "version": "0.0.4",
   "description": "A basic framework using SUIT CSS naming convention",
-  "main": "index.css",
+  "main": "src/index.css",
   "scripts": {
     "test": "ava --verbose",
     "watch": "ava --verbose --watch",
