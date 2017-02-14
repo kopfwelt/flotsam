@@ -5,6 +5,7 @@
 .Bar {
   position: relative;
   display: block;
+  z-index: 9999;
 }
 
 .Bar--horizontal {
