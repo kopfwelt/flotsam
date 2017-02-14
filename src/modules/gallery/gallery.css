@@ -1,4 +1,3 @@
-/*// @import "flickity/dist/flickity";*/
 
 .Gallery {
   position: relative;
@@ -17,12 +16,14 @@
   left: 0 !important;
   opacity: 0;
   transition: opacity 500ms linear;
-  // z-index: -1;
+
+  /* z-index: -1; */
 }
 
 .Gallery-cell.is-selected {
   opacity: 1;
-  // z-index: 0
+
+  /* z-index: 0 */
 }
 
 .Gallery img {
@@ -40,34 +41,41 @@
   height: 100% !important;
 }
 
-/* Ratio gallery (scale to the right format) */
-// Responsive images are adjusted to the same.
+/* Ratio gallery (scale to the right format)
+   Responsive images are adjusted to the same. */
+
 .GalleryRatio {
   @mixin aspect-ratio(35, 25);
-  > .Gallery:not(.Gallery--nav) {
+  
+  & > .Gallery:not(.Gallery--nav) {
     @mixin aspect-ratio-inner;
   }
 
-  // @media (orientation: portrait) and (max-width: 650px) {
-  //   @mixin aspect-ratio(9, 16);
-  // }
+  /* @media (orientation: portrait) and (max-width: 650px) { */
+  /*   @mixin aspect-ratio(9, 16); */
+  /* } */
 }
 
-// Set a max height when object-fit is supported
+/* Set a max height when object-fit is supported */
 .GalleryRatio--fitToViewport {
-  // min-height: $fill-viewport-height-min;
-  // max-height: $fill-viewport-height-max;
+
+  /* min-height: $fill-viewport-height-min; */
+  /* max-height: $fill-viewport-height-max; */
+
   overflow: hidden;
-  .Gallery:not(.Gallery--nav) .Gallery-cell {
+
+  & .Gallery:not(.Gallery--nav) .Gallery-cell {
     height: 100%;
 
-    img {
-      // max-height: $fill-viewport-height-max;
+    & img {
       height: 100%;
-      // object-fit: cover;
-      // object-position: center;
-      // Firefox hack for object-fit. This avoid jumping on load but breaks
-      // object-fit in Chrome 47 on Windows. Works from 48 again, so we keep it in.
+
+      /* max-height: $fill-viewport-height-max; */
+      /* object-fit: cover; */
+      /* object-position: center; */
+      /* Firefox hack for object-fit. This avoid jumping on load but breaks */
+      /* object-fit in Chrome 47 on Windows. Works from 48 again, so we keep it in. */
+
       transform: translate3d(0, 0, 0);
     }
   }
@@ -75,31 +83,29 @@
 
 /* Visual scroll indicator */
 a.Gallery-scroll {
-  position: absolute;
   bottom: 0;
-  width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  position: absolute;
   text-align: center;
   text-decoration: none;
+  width: 100%;
 
-  span {
-    color: white;
+  & span {
     border: 0;
+    color: white;
     letter-spacing: 0.1em;
   }
 
-  i {
-    width: 1em;
+  & i {
+    animation: point-down 4s ease-out 0.2s both;
     height: 2em;
     margin: 0.5em auto 1em;
-    animation: point-down 4s ease-out 0.2s both;
+    width: 1em;
   }
 
-  // @media (max-width: $layout-s) {
-  //   display: none;
-  // }
+  /* @media (max-width: $layout-s) { 
+     display: none; 
+   } */
 }
