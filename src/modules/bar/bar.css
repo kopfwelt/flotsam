@@ -9,18 +9,30 @@
 
 .Bar--horizontal {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
 
-  .Bar-item {
+  & .Bar-item {
     display: flex;
     align-items: center;
   }
-  .Nav {
+
+  & .Bar-item--left {
+    position: absolute;
+    left: 0;
+  }
+
+  & .Bar-item--right {
+    position: absolute;
+    right: 0;
+  }
+
+  & .Nav {
     display: flex;
   }
-  .Nav-item {
+
+  & .Nav-item {
     display: flex;
     align-items: center;
   }
@@ -31,7 +43,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  .Nav-item {
+  & .Nav-item {
     display: block;
     width: 100%;
   }
@@ -40,36 +52,37 @@
 /* Fallback */
 
 .no-flexbox {
-  .Bar--horizontal {
-    > * {
+
+  & .Bar--horizontal {
+
+    & > * {
       display: inline-block;
       vertical-align: middle;
     }
-    .Nav {
-      > * {
+
+   & .Nav {
+
+      & > * {
         display: inline-block;
         vertical-align: middle;
       }
     }
   }
-  .Bar--vertical {
-    > * {
+
+  & .Bar--vertical {
+
+    & > * {
       display: block;
       vertical-align: middle;
     }
   }
 
-  .Bar-item--left {
-    position: absolute;
-    left: 0;
-  }
-  .Bar-item--right {
-    position: absolute;
-    right: 0;
+  & .Bar-item--right {
     top: 50%;
     transform: translateY(-50%);
   }
-  .Bar-item--center {
+
+  & .Bar-item--center {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -79,14 +92,15 @@
     text-align: center;
     margin: auto;
   }
-  .Bar-item--middle {
+
+  & .Bar-item--middle {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
-  .Bar-item--bottom {
+
+  & .Bar-item--bottom {
     position: absolute;
     bottom: 0;
   }
-
 }
