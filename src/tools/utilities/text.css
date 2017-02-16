@@ -11,6 +11,10 @@
   }
 }
 
+.u-negativeText {
+  @apply --negative-text;
+}
+
 .u-resetTextTransform {
   text-transform: none;
 }
