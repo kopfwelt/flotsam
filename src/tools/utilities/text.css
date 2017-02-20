@@ -22,3 +22,7 @@
 .u-hideText {
   @apply --hide-text;
 }
+
+.u-textUnderline {
+  text-decoration: underline;
+}
