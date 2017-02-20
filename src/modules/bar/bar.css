@@ -8,6 +8,16 @@
   z-index: 9999;
 }
 
+.Bar-item--left {
+  position: absolute;
+  left: 0;
+}
+
+.Bar-item--right {
+  position: absolute;
+  right: 0;
+}
+
 .Bar--horizontal {
   display: flex;
   justify-content: center;
@@ -17,16 +27,6 @@
   & .Bar-item {
     display: flex;
     align-items: center;
-  }
-
-  & .Bar-item--left {
-    position: absolute;
-    left: 0;
-  }
-
-  & .Bar-item--right {
-    position: absolute;
-    right: 0;
   }
 
   & .Nav {
