@@ -1,55 +1,62 @@
 .BurgerWrap {
-  position: relative;
   display: inline-block;
-  width: 30px;
   height: 28px;
+  position: relative;
   vertical-align: middle;
+  width: 30px;
 
   & i {
+
     @mixin hide-text;
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 }
+
 .BurgerWrap:focus {
   outline: none;
 }
+
 .BurgerWrap-label {
-  position: absolute;
-  top: 12px;
-  right: 55px;
   color: black;
+  position: absolute;
+  right: 55px;
+  top: 12px;
 
   @media (min-width: var(--layout-sm)) {
     top: 14px;
   }
+
   @media (min-width: 1200px) {
     right: 70px;
   }
 }
 
 .Burger {
-  position: absolute;
-  width: 23px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding: 12px;
-  margin-top: 0;
-  border-top: 2px solid black;
-  transition: .4s var(--easing);
   backface-visibility: hidden;
+  border-top: 2px solid black;
+  left: 0;
+  margin: auto;
+  margin-top: 0;
+  padding: 12px;
+  position: absolute;
+  right: 0;
+  transition: 0.4s var(--easing);
+  width: 23px;
 
   @media (min-width: var(--layout-sm)) {
     width: 28px;
   }
 }
+
 .Burger--top {
   top: 0;
 }
+
 .Burger--middle {
   top: 10px;
 }
+
 .Burger--bottom {
   top: 20px;
 }
@@ -65,20 +72,25 @@
     border-color: black;
     padding: 0;
   }
+
   & .BurgerWrap-label {
     display: none;
   }
+
   & .BurgerWrap-label--close {
     display: block;
   }
 }
+
 .BurgerWrap.is-active .Burger--top {
   top: 10px;
   transform: rotateZ(45deg);
 }
+
 .BurgerWrap.is-active .Burger--middle {
   display: none;
 }
+
 .BurgerWrap.is-active .Burger--bottom {
   top: 10px;
   transform: rotateZ(-45deg);
