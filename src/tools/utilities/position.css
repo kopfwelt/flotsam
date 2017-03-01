@@ -9,7 +9,7 @@
     transform: translate(-50%, -50%);
   }
 
-  --positionVisualCenter {
+  --positionOpticalCenter {
     position: absolute;
     top: 39%;
     left: 50%;
@@ -23,9 +23,9 @@
   @apply --positionCenter;
 }
 
-.u-positionVisualCenter {
+.u-positionOpticalCenter {
 
-  @apply --positionVisualCenter;
+  @apply --positionOpticalCenter;
 }
 
 .u-posRelative {
