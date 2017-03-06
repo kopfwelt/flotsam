@@ -15,14 +15,22 @@
   @apply --negative-text;
 }
 
-.u-resetTextTransform {
-  text-transform: none;
-}
-
 .u-hideText {
   @apply --hide-text;
 }
 
 .u-textUnderline {
   text-decoration: underline;
+}
+
+.u-resetTextTransform {
+  text-transform: none;
+}
+
+.u-textLowercase {
+  text-transform: lowercase;
+}
+
+.u-textUppercase {
+  text-transform: uppercase;
 }
