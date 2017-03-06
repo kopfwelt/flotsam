@@ -19,9 +19,11 @@
 }
 
 .u-ratio-inner {
-    @mixin ratio-inner;
+
+  @mixin ratio-inner;
 }
 
 .u-ratio-1-1 {
-    @mixin ratio 1, 1;
+
+  @mixin ratio 1, 1;
 }
