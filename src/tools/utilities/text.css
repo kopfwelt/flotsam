@@ -20,17 +20,17 @@
 }
 
 .u-textUnderline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .u-resetTextTransform {
-  text-transform: none;
+  text-transform: none !important;
 }
 
 .u-textLowercase {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 
 .u-textUppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
