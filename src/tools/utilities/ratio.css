@@ -1,3 +1,8 @@
+/*
+* Ratio utilitie
+* for firefox the ratio container will stay height: 0 if display: flex
+*/
+
 @define-mixin ratio $ratioWidth: 16, $ratioHeight: 9 {
   position: relative;
 
