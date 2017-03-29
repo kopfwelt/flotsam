@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/kopfwelt/kern#readme",
   "devDependencies": {
-    "ava": "^0.17.0",
+    "ava": "^0.18.2",
     "cssnext": "^1.8.4",
     "docset-generator": "^0.2.2",
     "git-rev": "^0.2.1",
-    "jquery": "^3.1.1",
+    "jquery": "^3.2.1",
     "pify": "^2.3.0",
     "postcss": "^5.2.8",
     "postcss-calc": "^5.3.1",
