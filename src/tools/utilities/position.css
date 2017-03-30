@@ -16,6 +16,30 @@
     transform: translate(-50%, -39%);
   }
 
+  --positionBottomRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  --positionBottomLeft {
+    position: absolute;
+    bottom: 0;
+    Left: 0;
+  }
+
+  --positionTopRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  --positionTopLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
 }
 
 .u-positionCenter {
@@ -27,6 +51,27 @@
 
   @apply --positionOpticalCenter;
 }
+
+.u-positionBottomRight {
+
+  @apply --positionBottomRight;
+}
+
+.u-positionBottomLeft {
+
+  @apply --positionBottomLeft;
+}
+
+.u-positionTopRight {
+
+  @apply --positionTopRight;
+}
+
+.u-positionTopLeft {
+
+  @apply --positionTopLeft;
+}
+
 
 .u-posRelative {
   position: relative;
