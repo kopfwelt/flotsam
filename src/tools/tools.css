@@ -9,6 +9,7 @@
  * import utilities
  */
 
+@import "./utilities/display.css";
 @import "./utilities/flex.css";
 @import "./utilities/ratio.css";
 @import "./utilities/navigation.css";

@@ -1,0 +1,37 @@
+@import "suitcss-utils-display";
+
+@media (--sm-viewport) {
+  .u-sm-hidden { display: none !important; }
+}
+
+@media (--md-viewport) {
+  .u-md-hidden { display: none !important; }
+}
+
+@media (--lg-viewport) {
+  .u-lg-hidden { display: none !important; }
+}
+
+@media (--sm-viewport) {
+  .u-sm-block { display: block !important; }
+}
+
+@media (--md-viewport) {
+  .u-md-block { display: block !important; }
+}
+
+@media (--lg-viewport) {
+  .u-lg-block { display: block !important; }
+}
+
+@media (--sm-viewport) {
+  .u-sm-inlineBlock { display: inline-block !important; }
+}
+
+@media (--md-viewport) {
+  .u-md-inlineBlock { display: inline-block !important; }
+}
+
+@media (--lg-viewport) {
+  .u-lg-inlineBlock { display: inline-block !important; }
+}

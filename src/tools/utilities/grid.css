@@ -175,12 +175,4 @@
     box-sizing: border-box !important;
     width: 100% !important;
   }
-
-  /**
-   * Hide an element
-   */
-
-  .u-xl-hide {
-    display: none;
-  }
 }
