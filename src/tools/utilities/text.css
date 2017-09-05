@@ -34,3 +34,9 @@
 .u-textUppercase {
   text-transform: uppercase !important;
 }
+
+@media (--lg-viewport) {
+  .u-lg-textCenter {
+    text-align: center;
+  }
+}
